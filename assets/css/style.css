@@ -1765,11 +1765,16 @@ textarea.form-input::-webkit-resizer { display: none; }
 /**
  * responsive larger than 1250px screen
  */
- @media (min-width: 1920px), (min-height: 1080px) {
+ @media (min-width: 1921px) {
   body{
     background: var(--smoky-black)
   }
 }
+/*@media (min-width: 1080px){
+  body{
+    background: var(--smoky-black)
+  }
+}*/
 
 
 @media (min-width: 1250px) {
