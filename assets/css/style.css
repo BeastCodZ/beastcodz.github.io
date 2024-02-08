@@ -1235,6 +1235,7 @@ textarea.form-input::-webkit-resizer { display: none; }
  * responsive larger than 450px screen
  */
 
+
 @media (min-width: 450px) {
 
   /**
@@ -1775,7 +1776,11 @@ textarea.form-input::-webkit-resizer { display: none; }
     background: var(--smoky-black)
   }
 }
-
+@media (max-width: 250px){
+  body{
+    background: var(--smoky-black)
+  }
+}
 
 @media (min-width: 1250px) {
   
