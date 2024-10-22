@@ -13,10 +13,10 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "BeastCodZ - Full Stack Developer",
   description: "Full-stack developer specializing in creating intelligent, scalable solutions that blend creativity with code.",
-  keywords: "BeastCodZ, Full Stack Developer, Web Development, JavaScript, React, Node.js, Next.js, Scalable Solutions, Creative Coding"
+  keywords: "BeastCodZ, Full Stack Developer, Web Development, JavaScript, React, Node.js, Next.js, Scalable Solutions, Creative Coding",
 };
 
 
