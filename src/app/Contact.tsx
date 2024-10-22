@@ -82,13 +82,13 @@ const Contact = () => {
     console.log(process.env)
     try {
       await emailjs.send(
-        process.env.EMAIL_SERVICE,
-        process.env.EMAIL_TEMPLATE,
+        process.env.EMAIL_SERVICE as string || 'default_service',
+        process.env.EMAIL_TEMPLATE as string || 'default_template',
         emailData,
-        process.env.EMAIL_USER
+        process.env.EMAIL_USER as string || 'default_user'
       );
       setIsFadingOut(true);
-      setTimeout(() => {
+      setTimeout(() => {dddd
         setIsFormVisible(false);
         setSubmissionStatus("Message Sent!");
       }, 300);
