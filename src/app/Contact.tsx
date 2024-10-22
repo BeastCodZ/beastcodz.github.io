@@ -88,7 +88,7 @@ const Contact = () => {
         process.env.EMAIL_USER as string || 'default_user'
       );
       setIsFadingOut(true);
-      setTimeout(() => {dddd
+      setTimeout(() => {
         setIsFormVisible(false);
         setSubmissionStatus("Message Sent!");
       }, 300);
