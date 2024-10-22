@@ -1,0 +1,40 @@
+.fade-enter {
+    opacity: 0;
+  }
+  
+  .fade-enter-active {
+    opacity: 1;
+    transition: opacity 300ms ease-in-out;
+  }
+  
+  .fade-exit {
+    opacity: 1;
+  }
+  
+  .fade-exit-active {
+    opacity: 0;
+    transition: opacity 300ms ease-in-out;
+  }
+  
+  .node {
+    background-color: #4a5568; /* Gray background */
+    color: #fff; /* White text */
+    padding: 15px 30px;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    position: absolute; /* Absolute positioning for nodes */
+  }
+  
+  .sub-atom {
+    background-color: #1a202c; /* Darker gray */
+    color: #cbd5e0; /* Light gray text */
+    padding: 10px;
+    border-radius: 10px;
+    transition: transform 0.2s;
+  }
+  
+  .sub-atom:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+  }
+  
