@@ -1,24 +1,23 @@
 import React, { FC, useState } from "react";
-import { House, User, Folder, Wrench, Phone } from 'phosphor-react';
-import './styles.css';
-import {
-  motion,
-  AnimatePresence,
-  useMotionValue
-} from "framer-motion";
+import { House, User, Folder, Wrench, Phone } from "phosphor-react";
+import "./styles.css";
+import { motion, AnimatePresence, useMotionValue } from "framer-motion";
 
 interface DotNavigationProps {
   activeComponent: number;
   setActiveComponent: (index: number) => void;
 }
 
-const DotNavigation: FC<DotNavigationProps> = ({ activeComponent, setActiveComponent }) => {
+const DotNavigation: FC<DotNavigationProps> = ({
+  activeComponent,
+  setActiveComponent,
+}) => {
   const items = [
-    { id: 1, name: 'Home' },
-    { id: 2, name: 'Profile' },
-    { id: 3, name: 'Projects' },
-    { id: 4, name: 'Skills' },
-    { id: 5, name: 'Contact' },
+    { id: 1, name: "Home" },
+    { id: 2, name: "Profile" },
+    { id: 3, name: "Projects" },
+    { id: 4, name: "Skills" },
+    { id: 5, name: "Contact" },
   ];
 
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
@@ -32,16 +31,16 @@ const DotNavigation: FC<DotNavigationProps> = ({ activeComponent, setActiveCompo
 
   const icons = [
     <House size={24} key={1} />,
-    <User size={24} key={2}/>,
-    <Folder size={24} key={3}/>,
-    <Wrench size={24} key={4}/>,
-    <Phone size={24} key={5}/>,
+    <User size={24} key={2} />,
+    <Folder size={24} key={3} />,
+    <Wrench size={24} key={4} />,
+    <Phone size={24} key={5} />,
   ];
 
   return (
     <div className="fixed bg-opacity-5 backdrop-blur-sm rounded-md bottom-0 left-1/2 transform -translate-x-1/2 mb-6 flex flex-row items-center space-x-4">
       {icons.map((icon, index) => (
-  <div key={items[index].name} className="relative">
+        <div key={items[index].name} className="relative">
           <motion.button
             className={`flex z-20 items-center justify-center w-10 h-10 rounded-full transition-all duration-0 ${
               activeComponent === index ? "bg-slate-500" : "bg-slate-800"

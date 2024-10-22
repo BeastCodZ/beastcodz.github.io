@@ -1,5 +1,12 @@
-// skills.tsx
-import { FaJs, FaReact, FaHtml5, FaCss3Alt, FaNodeJs, FaPython, FaDatabase } from "react-icons/fa";
+import {
+  FaJs,
+  FaReact,
+  FaHtml5,
+  FaCss3Alt,
+  FaNodeJs,
+  FaPython,
+  FaDatabase,
+} from "react-icons/fa";
 
 const skillsData = [
   {
