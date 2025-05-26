@@ -142,11 +142,9 @@ export default function InteractiveTerminal() {
   const runIntro = async () => {
     await appendLines(intro, 50, 25);
     setIntroComplete(true);
-    if (count === null) {
-      fetch('/api/counter')
-        .then(res => res.json())
-        .then(data => setCount(data.count));
-    }
+    fetch('/api/counter')
+      .then(res => res.json())
+      .then(data => setCount(data.count));
   };
 
   runIntro();
