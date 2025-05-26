@@ -1,11 +1,11 @@
-import { ShieldCheck, Clock, AlertTriangle, QrCode, Zap } from 'lucide-react';
+import { LockIcon, Clock, AlertTriangle, QrCode, Zap } from 'lucide-react';
 
 export default function WinKey() {
   return (
     <div className="bg-[#146d5b07] text-[#00FFCC] p-6 md:p-10 rounded-2xl shadow-lg backdrop-blur-sm transition-all duration-300 ease-in-out max-w-4xl mx-auto z-1">
       {/* HEADER */}
       <div className="mb-8 flex items-start gap-4">
-        <ShieldCheck size={32} className="min-w-[32px]" />
+        <LockIcon size={32} className="min-w-[32px]" />
         <div>
           <h3 className="text-lg font-semibold">&gt; project → <span className="text-[#FF4444]">WinKey</span></h3>
           <p className="text-sm mt-1 text-[#00ffccaa] italic">

@@ -4,6 +4,7 @@ import Nav from "./nav";
 import Particle from "./components/background";
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://beastcodz.github.io'),
   title: "BeastCodZ ~ The Dev",
   description: "Just your friendly neighborhood developer",
   keywords: "BeastCodZ, Portfolio, Electron, Arch Linux, Projects, Offline Authenticator, TOTP, WinKey, The Dev, Full, Stack, Developer, Editor, Typist, Student",
@@ -16,7 +17,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'BeastCodZ ~ The Dev',
     description: 'Because even mediocrity has standards.',
-    images: ['/wallpaper.jpg'],
+    images: '/wallpaper.jpg',
     type: 'website',
   },
 
