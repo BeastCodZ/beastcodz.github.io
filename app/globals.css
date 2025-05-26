@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+/* @theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+} */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+@font-face {
+  font-family: 'CaskaydiaCove Nerd Font';
+  src: local('CaskaydiaCove Nerd Font'), url('../fonts/CaskaydiaCoveNerdFont-Regular.ttf') format('truetype');
+}
+
+body {
+  /* background: url('/wallpaper.jpg'); */
+  background-color: #0d0d0d; 
+  background-position: center;
+  background-size: cover;
+  backdrop-filter: blur(10px);
+  background-blend-mode: darken;
+  color: var(--foreground);
+  font-family: CaskaydiaCove Nerd Font;
+}
+/* body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image: repeating-linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.03),
+    rgba(255, 255, 255, 0.03) 1px,
+    transparent 1px,
+    transparent 2px
+  );
+  z-index: 100;
+} */
+
+@keyframes flicker {
+  0% { opacity: 1; }
+  50% { opacity: 0.6; }
+  100% { opacity: 1; }
+}
+.flicker {
+  animation: flicker 0.3s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+.animate-caret::after {
+  content: '';
+  display: inline-block;
+  width: 1px;
+  height: 1em;
+  background: #00FFCC;
+  animation: blink 1s steps(2, start) infinite;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
