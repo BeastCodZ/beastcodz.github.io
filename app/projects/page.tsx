@@ -25,7 +25,7 @@ export default function Projects() {
               <h3 className="text-md font-semibold">WinKey — Offline Authenticator</h3>
               <p className="text-sm">Electron.js • TOTP • Local Storage • Cross-Platform</p>
               <p className="text-xs mt-2 text-[#00ffccaa] italic">
-                “Because trusting the cloud for OTPs is a rookie move.”
+                &ldquo;Because trusting the cloud for OTPs is a rookie move.&rdquo;
               </p>
               <span
                 className="inline-flex items-center gap-1 text-[#FF4444] text-xs mt-2 "
@@ -47,7 +47,7 @@ export default function Projects() {
               </h3>
               <p className="text-sm">Arch Linux • Translucent • Cozy Environment</p>
               <p className="text-xs mt-2 text-[#00ffccaa] italic">
-                “I use Arch, btw.”
+                &ldquo;I use Arch, btw.&rdquo;
               </p>
               <span
                 className="inline-flex items-center gap-1 text-[#FF4444] text-xs mt-2 "

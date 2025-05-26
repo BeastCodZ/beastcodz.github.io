@@ -24,7 +24,7 @@ export default function About() {
           </p>
 
           <p className="text-xs mt-3 text-[#00ffccaa] italic text-pretty">
-            "Why read the book, when you can just make your own version of it?”
+            &ldquo;Why read the book, when you can just make your own version of it?&rdquo;
           </p>
         </div>
       </div>

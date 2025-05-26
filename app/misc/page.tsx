@@ -111,11 +111,11 @@ export default function Misc() {
         <div className="mb-8">
           <h3 className="text-md font-semibold mb-4">💬 Favorite Quotes</h3>
           <ul className="list-disc list-inside text-sm text-pretty">
-            <li>"The only way to do great work is to love what you do." - Steve Jobs</li>
-            <li>"Simplicity is the ultimate sophistication." - Leonardo da Vinci</li>
-            <li>"Code is like humor. When you have to explain it, it’s bad." - Cory House</li>
-            <li>"If you don't fight for your love, what kind of love do you have?" - Keanu Reeves</li>
-            <li>"Everybody lies." - Dr. Gregory House</li>
+            <li>&ldquo;The only way to do great work is to love what you do.&rdquo; - Steve Jobs</li>
+            <li>&ldquo;Simplicity is the ultimate sophistication.&rdquo; - Leonardo da Vinci</li>
+            <li>&ldquo;Code is like humor. When you have to explain it, it&rsquo;s bad.&rdquo; - Cory House</li>
+            <li>&ldquo;If you don&rsquo;t fight for your love, what kind of love do you have?&rdquo; - Keanu Reeves</li>
+            <li>&ldquo;Everybody lies.&rdquo; - Dr. Gregory House</li>
           </ul>
         </div>
       )}

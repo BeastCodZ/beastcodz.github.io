@@ -1,28 +1,29 @@
-import { LockIcon, Clock, AlertTriangle, QrCode, Zap } from 'lucide-react';
-
+import { LockIcon, Clock, AlertTriangle, QrCode, Zap } from "lucide-react";
+import Image from "next/image";
 export default function WinKey() {
   return (
     <div className="bg-[#146d5b07] text-[#00FFCC] p-6 md:p-10 rounded-2xl shadow-lg backdrop-blur-sm transition-all duration-300 ease-in-out max-w-4xl mx-auto z-1">
-      {/* HEADER */}
+      {/* Header */}
       <div className="mb-8 flex items-start gap-4">
         <LockIcon size={32} className="min-w-[32px]" />
         <div>
-          <h3 className="text-lg font-semibold">&gt; project → <span className="text-[#FF4444]">WinKey</span></h3>
+          <h3 className="text-lg font-semibold">
+            &gt; project → <span className="text-[#FF4444]">WinKey</span>
+          </h3>
           <p className="text-sm mt-1 text-[#00ffccaa] italic">
-            “Security shouldn’t be ugly.”
+            &ldquo;Security shouldn’t be ugly.&rdquo;
           </p>
         </div>
       </div>
 
-      {/* DESCRIPTION */}
       <div className="mb-8 space-y-4 text-sm">
         <p>
-          WinKey is a slick, no-nonsense desktop authenticator built with Electron. It’s lightweight, local, and 
-          focused entirely on one thing — generating secure TOTP codes for your accounts.
+          WinKey is a slick, no-nonsense desktop authenticator built with
+          Electron. It’s lightweight, local, and focused entirely on one thing —
+          generating secure TOTP codes for your accounts.
         </p>
       </div>
 
-      {/* FEATURES */}
       <div className="mb-8 space-y-4">
         <div className="flex items-start gap-3">
           <Clock size={20} />
@@ -38,13 +39,18 @@ export default function WinKey() {
         </div>
       </div>
 
-      {/* IMAGES */}
       <div className="mb-8">
-        <h4 className="text-sm font-semibold mb-2 text-[#00FFCC]">Screenshots</h4>
+        <h4 className="text-sm font-semibold mb-2 text-[#00FFCC]">
+          Screenshots
+        </h4>
         <div className="flex flex-wrap gap-2">
           <div className="relative">
-            <a href='/projects/WinKey/1.png' target="_blank" rel="noopener noreferrer">
-              <img
+            <a
+              href="/projects/WinKey/1.png"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image
                 src="/projects/WinKey/1.png"
                 alt="WinKey UI screenshot"
                 className="rounded-lg shadow-md w-48 h-32 object-cover border border-[#00FFCC33] bg-[#0a2e27]"
@@ -56,8 +62,12 @@ export default function WinKey() {
             </a>
           </div>
           <div className="relative">
-            <a href='/projects/WinKey/2.png' target="_blank" rel="noopener noreferrer">
-              <img
+            <a
+              href="/projects/WinKey/2.png"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image
                 src="/projects/WinKey/2.png"
                 alt="WinKey UI screenshot"
                 className="rounded-lg shadow-md w-48 h-32 object-cover border border-[#00FFCC33] bg-[#0a2e27]"
@@ -74,7 +84,10 @@ export default function WinKey() {
       {/* FOOTER */}
       <div className="border-t border-[#00FFCC55] pt-4 text-xs text-[#FF4444] flex items-center gap-2">
         <AlertTriangle size={16} />
-        <span>No encryption yet. Keep your <code>secrets.json</code> safe, or don’t cry when it’s gone.</span>
+        <span>
+          No encryption yet. Keep your <code>secrets.json</code> safe, or don’t
+          cry when it’s gone.
+        </span>
       </div>
     </div>
   );

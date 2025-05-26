@@ -14,7 +14,6 @@ export default function Skills() {
         </div>
       </div>
 
-      {/* Core Tech Stack */}
       <div className="mb-8 flex flex-col items-start gap-4">
         <div className="flex items-start gap-4">
           <Code2 size={28} className="min-w-[28px] mt-1" />
@@ -22,13 +21,12 @@ export default function Skills() {
         <h3 className="text-md font-semibold">Core Tech Stack</h3>
         <p className="text-sm">C, Python, JavaScript, Next.js, Node.js, MongoDB, MySQL</p>
         <p className="text-xs mt-2 text-[#00ffccaa] italic">
-          “Stacked, loaded, and ready to deploy.”
+          &ldquo;Stacked, loaded, and ready to deploy.&rdquo;
         </p>
           </div>
         </div>
       </div>
 
-      {/* Dev & OS Tools */}
       <div className="mb-8 flex flex-col items-start gap-4">
       <div className="flex items-start gap-4">
         <Terminal size={28} className="min-w-[28px]" />
@@ -44,13 +42,12 @@ export default function Skills() {
             </span>
           </p>
           <p className="text-xs mt-2 text-[#00ffccaa] italic">
-            “My trusty sidekicks in the coding realm.”
+            &ldquo;My trusty sidekicks in the coding realm.&rdquo;
           </p>
         </div>
         </div>
       </div>
 
-      {/* Other Skills */}
       <div className="mb-8 flex flex-col items-start gap-4">
       <div className="flex items-start gap-4">
         <Bot size={28} className="min-w-[28px]" />
@@ -58,7 +55,7 @@ export default function Skills() {
           <h3 className="text-md font-semibold">Other Skills</h3>
           <p className="text-sm">Typing @ 126 WPM, CLI Mastery, Linux Distro Building</p>
           <p className="text-xs mt-2 text-[#00ffccaa] italic">
-            “Not flashy, just effective — skills that speak for themselves.”
+            &ldquo;Not flashy, just effective — skills that speak for themselves.&rdquo;
           </p>
         </div>
         </div>

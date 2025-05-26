@@ -16,7 +16,6 @@ export default function Education() {
         </div>
       </div>
 
-      {/* High School */}
       <div className="mb-8 flex flex-col items-start gap-4">
         <div className="flex items-start gap-4">
           <Backpack size={28} className="min-w-[28px]" />
@@ -25,12 +24,11 @@ export default function Education() {
             <p className="text-sm">CBSE <span className="mx-2">|</span> Year: 2022</p>
             <p className="text-sm">Score: 71.4%</p>
             <p className="text-xs mt-2 text-[#00ffccaa] italic">
-              “The only thing I learned in school was how to be a good person.”
+              &ldquo;The only thing I learned in school was how to be a good person.&rdquo;
             </p>
           </div></div>
       </div>
 
-      {/* Senior School */}
       <div className="mb-8 flex flex-col items-start gap-4">
         <div className="flex items-start gap-4">
           <School size={28} className="min-w-[28px]" />
@@ -39,12 +37,11 @@ export default function Education() {
             <p className="text-sm">Non-Medical <span className="mx-2">|</span> Year: 2024</p>
             <p className="text-sm">Score: 71.2%</p>
             <p className="text-xs mt-2 text-[#00ffccaa] italic">
-              “Aiming for the clouds, but still grounded in reality.”
+              &ldquo;Aiming for the clouds, but still grounded in reality.&rdquo;
             </p>
           </div></div>
       </div>
 
-      {/* University */}
       <div className="mb-8 flex flex-col items-start gap-4">
         <div className="flex items-start gap-4">
           <University size={28} className="min-w-[28px]" />
@@ -52,7 +49,7 @@ export default function Education() {
             <h3 className="text-md font-semibold">Request pending.. to be updated by July 2025</h3>
             <p className="text-xs text-yellow-400">On the journey of learning a bit of everything, mastering the art of staying curious.</p>
             <p className="text-xs mt-2 text-[#00ffccaa] italic">
-              “The grind never stopped. Knowledge is the new exploit.”
+              &ldquo;The grind never stopped. Knowledge is the new exploit.&rdquo;
             </p>
           </div>
         </div>

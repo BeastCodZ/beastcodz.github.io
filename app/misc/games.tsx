@@ -1,7 +1,7 @@
 'use client';
 import React, { useState, useRef } from 'react';
 import Image from 'next/image';
-import { motion, useDragControls } from 'framer-motion';
+import { motion, useDragControls, PanInfo } from 'framer-motion';
 
 const games = [
 	{
@@ -63,7 +63,7 @@ export default function GameCarousel() {
 		return 'hidden';
 	};
 
-	const handleDragEnd = (_: any, info: any) => {
+	const handleDragEnd = (_: unknown, info: PanInfo) => {
 		if (info.offset.x < -50) {
 			next();
 		} else if (info.offset.x > 50) {
@@ -73,7 +73,6 @@ export default function GameCarousel() {
 
 	return (
 		<div className="relative w-full max-w-6xl mx-auto py-12">
-			{/* NAV Buttons hidden on screens smaller than lg */}
 			<button
 				onClick={prev}
 				className="hidden lg:block absolute left-0 top-1/2 transform -translate-y-1/2 bg-[#00FFCC] text-black px-3 py-2 z-10 rounded-full shadow hover:bg-[#FF4444] hover:text-white transition"

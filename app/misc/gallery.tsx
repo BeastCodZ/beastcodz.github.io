@@ -1,7 +1,7 @@
 'use client';
 import React, { useState, useRef } from 'react';
 import Image from 'next/image';
-import { motion, useDragControls } from 'framer-motion';
+import { motion, useDragControls, PanInfo } from 'framer-motion';
 
 const photos = [
   { file: '1_IQOO.jpg', landscape: true },
@@ -34,7 +34,7 @@ export function ScrollGallery() {
     return 'hidden';
   };
 
-  const handleDragEnd = (_: any, info: any) => {
+  const handleDragEnd = (_: unknown, info: PanInfo) => {
     if (info.offset.x < -50) {
       next();
     } else if (info.offset.x > 50) {

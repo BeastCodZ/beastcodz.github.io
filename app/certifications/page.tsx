@@ -10,7 +10,7 @@ export default function Certs() {
         <div>
         <h3 className="text-lg font-semibold">&gt; cat → <span className="text-[#FF4444]">certificates.txt</span></h3>
           <p className="text-sm mt-1 text-pretty">
-            Real stuff. Real effort. No AI badges or "You watched a video!" trophies.
+            Real stuff. Real effort. No AI badges or &ldquo;You watched a video!&rdquo; trophies.
           </p>
         </div>
       </div>
@@ -23,7 +23,7 @@ export default function Certs() {
           <h3 className="text-md font-semibold">Google Cybersecurity</h3>
           <p className="text-sm">Google via Coursera <span className="mx-2">|</span> May 2023</p>
           <p className="text-xs mt-2 text-[#00ffccaa] italic">
-            “If it connects, I learned how to protect it. And if it breaks, I know how to trace it.”
+            &ldquo;If it connects, I learned how to protect it. And if it breaks, I know how to trace it.&rdquo;
           </p>
         </div>
         </div>
@@ -37,7 +37,7 @@ export default function Certs() {
           <h3 className="text-md font-semibold">CS50x: Introduction to Computer Science</h3>
           <p className="text-sm">Harvard University via edX <span className="mx-2">|</span> <span className='text-yellow-400'>In Progress</span></p>
           <p className="text-xs mt-2 text-[#00ffccaa] italic">
-            “CS50 didn’t teach me how to code. It taught me how to solve problems like an engineer.”
+            &ldquo;CS50 didn’t teach me how to code. It taught me how to solve problems like an engineer.&rdquo;
           </p>
         </div>
       </div>

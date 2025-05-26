@@ -18,9 +18,6 @@ const commands: Record<string, CommandHandler> = {
   ],
   wisdom: () => [
     "Code is like humor. When you have to explain it, it’s bad.",
-    //"The best way to predict the future is to invent it.",
-    //"In programming, the hard part isn't solving problems, but deciding what problems to solve.",
-    //"If at first you don't succeed, call it version 1.0."
   ],
   sudo: () => ["Nice try. You don't have permission. Maybe one day."],
   meow: () => ["Meow! 🐾 Even my cat codes better than most."],
@@ -54,7 +51,7 @@ const commands: Record<string, CommandHandler> = {
       ];
     } catch (e) {
       return [
-        "Failed to scan your existence. Maybe that's for the best."
+        `Failed to scan your existence. Maybe that's for the best. ${e}`
       ];
     }
   },
@@ -64,8 +61,9 @@ export default function InteractiveTerminal() {
   const [history, setHistory] = useState<string[]>([]);
   const [input, setInput] = useState("");
   const [introComplete, setIntroComplete] = useState(false);
-  const [isTyping, setIsTyping] = useState(false);
+  const [isTyping] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
+  
 
 
   const appendLines = async (lines: string[], delayLines: number = 30, delayWords: number = 10) => {
@@ -129,30 +127,32 @@ export default function InteractiveTerminal() {
   };
 
 
-
-  // Typing boot sequence
   useEffect(() => {
-    const intro = [
-      "Powering on...",
-      "Establishing connection to beastcodz.github.io (you're welcome).",
-      "Injecting pure talent into the environment...",
-      "Loading modules you probably can't comprehend...",
-      "Logged in as guest. Root access? Dream on.",
-      "Type $help if you need a lifeline."
-    ];
+  if (introComplete) return;
 
-    const runIntro = async () => {
-      await appendLines(intro, 50, 25);
-      setIntroComplete(true);
-      if (count === null) {
-        fetch('/api/counter')
-          .then(res => res.json())
-          .then(data => setCount(data.count));
-      }
-    };
+  const intro = [
+    "Powering on...",
+    "Establishing connection to beastcodz.github.io (you're welcome).",
+    "Injecting pure talent into the environment...",
+    "Loading modules you probably can't comprehend...",
+    "Logged in as guest. Root access? Dream on.",
+    "Type $help if you need a lifeline."
+  ];
 
-    runIntro();
-  }, []);
+  const runIntro = async () => {
+    await appendLines(intro, 50, 25);
+    setIntroComplete(true);
+    if (count === null) {
+      fetch('/api/counter')
+        .then(res => res.json())
+        .then(data => setCount(data.count));
+    }
+  };
+
+  runIntro();
+}, [count, introComplete]);
+
+
 
   useEffect(() => {
     containerRef.current?.scrollTo(0, containerRef.current.scrollHeight);
