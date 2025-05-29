@@ -5,23 +5,21 @@ import Particle from "./components/background";
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://beastcodz.github.io'),
-  title: "BeastCodZ ~ The Dev",
-  description: "Just your friendly neighborhood developer",
-  keywords: "BeastCodZ, Portfolio, Electron, Arch Linux, Projects, Offline Authenticator, TOTP, WinKey, The Dev, Full, Stack, Developer, Editor, Typist, Student",
-  authors: [
-    {
-      name: "BeastCodZ",
-      url: "https://github.com/BeastCodZ",
-    }
-  ],
-  openGraph: {
-    title: 'BeastCodZ ~ The Dev',
-    description: 'Because even mediocrity has standards.',
-    images: '/wallpaper.jpg',
-    type: 'website',
-  },
-
-
+title: "BeastCodZ | Code Alchemist & Tinkerer of the Stack",
+description: "Tinkering with tech, breaking the rules, and building what matters. BeastCodZ isn't a label—it's a definition. Code meets chaos and every byte tells a story.",
+keywords: "BeastCodZ, Portfolio, Electron, Arch Linux, Projects, Offline Authenticator, TOTP, WinKey, The Dev, Full Stack Developer, Editor, Typist, Student",
+authors: [
+  {
+    name: "BeastCodZ",
+    url: "https://github.com/BeastCodZ",
+  }
+],
+openGraph: {
+  title: 'BeastCodZ | Code Alchemist & Tinkerer of the Stack',
+  description: "Tinkering with tech, breaking the rules, and building what matters. BeastCodZ isn't a label—it's a definition. Code meets chaos and every byte tells a story.",
+  images: ["/image.jpg"],
+  type: 'website',
+},
 };
 
 export default function RootLayout({
