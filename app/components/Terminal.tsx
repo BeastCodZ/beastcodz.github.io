@@ -95,7 +95,7 @@ export default function InteractiveTerminal() {
       return
     }
     if (trimmed === "sourcecode") {
-      fetch('http://localhost:3000/api/counter', { method: 'POST' }).catch(console.error)
+      fetch('https://beastcodzapi.vercel.app/api/counter', { method: 'POST' }).catch(console.error)
       window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ?autoplay=1"
       return
     }
@@ -149,7 +149,7 @@ const returningLines = [
       const line = returningLines[Math.floor(Math.random() * returningLines.length)]
       setHistory([line]);
       setIntroComplete(true);
-      fetch('http://localhost:3000/api/counter')
+      fetch('https://beastcodzapi.vercel.app/api/counter')
         .then(res => res.json())
         .then(data => setCount(data.count));
       return;
@@ -159,7 +159,7 @@ const returningLines = [
       await appendLines(introLines, 50, 25);
       setIntroComplete(true);
       localStorage.setItem("introComplete", "true");
-      fetch('http://localhost:3000/api/counter')
+      fetch('https://beastcodzapi.vercel.app/api/counter')
         .then(res => res.json())
         .then(data => setCount(data.count));
     };
