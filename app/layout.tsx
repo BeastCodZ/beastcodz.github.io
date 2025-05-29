@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Nav from "./nav";
 import Particle from "./components/background";
+import localFont from 'next/font/local'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://beastcodz.github.io'),
@@ -21,13 +22,24 @@ openGraph: {
   type: 'website',
 },
 };
+const Caskaydia = localFont({
+  src: [
+    {
+      path: '../fonts/CaskaydiaCoveNerdFont-Regular.ttf',
+      weight: '400',
+      style: 'normal'
+    }
+  ],
+  display: 'swap'
+})
+
 
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body className="antialiased">
+      <body className={`${Caskaydia.className} antialiased`}>
 
         <div className="absolute inset-0 -z-10">
           <Particle />

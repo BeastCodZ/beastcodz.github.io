@@ -16,10 +16,6 @@
     --foreground: #ededed;
   }
 }
-@font-face {
-  font-family: 'CaskaydiaCove Nerd Font';
-  src: local('CaskaydiaCove Nerd Font'), url('../fonts/CaskaydiaCoveNerdFont-Regular.ttf') format('truetype');
-}
 
 body {
   /* background: url('/wallpaper.jpg'); */
@@ -29,7 +25,6 @@ body {
   backdrop-filter: blur(10px);
   background-blend-mode: darken;
   color: var(--foreground);
-  font-family: CaskaydiaCove Nerd Font;
 }
 /* body::before {
   content: '';
