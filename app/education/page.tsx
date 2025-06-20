@@ -22,7 +22,6 @@ export default function Education() {
           <div>
             <h3 className="text-md font-semibold">All India Secondary School Examination</h3>
             <p className="text-sm">CBSE <span className="mx-2">|</span> Year: 2022</p>
-            <p className="text-sm">Score: 71.4%</p>
             <p className="text-xs mt-2 text-[#00ffccaa] italic">
               &ldquo;The only thing I learned in school was how to be a good person.&rdquo;
             </p>
@@ -35,7 +34,6 @@ export default function Education() {
           <div>
             <h3 className="text-md font-semibold">Senior School Certificate Examination</h3>
             <p className="text-sm">Non-Medical <span className="mx-2">|</span> Year: 2024</p>
-            <p className="text-sm">Score: 71.2%</p>
             <p className="text-xs mt-2 text-[#00ffccaa] italic">
               &ldquo;Aiming for the clouds, but still grounded in reality.&rdquo;
             </p>
