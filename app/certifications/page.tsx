@@ -35,19 +35,19 @@ export default function Certs() {
         <Trophy size={28} className="min-w-[28px]" />
         <div>
           <h3 className="text-md font-semibold">CS50x: Introduction to Computer Science</h3>
-          <p className="text-sm">Harvard University via edX <span className="mx-2">|</span> June 2025</span></p>
+          <p className="text-sm">Harvard University via edX <span className="mx-2">|</span> June 2025</p>
           <p className="text-xs mt-2 text-[#00ffccaa] italic">
             &ldquo;CS50 didn’t teach me how to code. It taught me how to solve problems like an engineer.&rdquo;
           </p>
         </div>
       </div>
       </div>
-
       {/* Footer */}
       <div className="border-t border-[#00FFCC55] pt-4 text-xs text-pretty text-[#FF4444] flex items-center gap-2">
         <AlertCircleIcon size={16} />
         <span>Certificates? Yeah. But the real skill came from breaking stuff and fixing it.</span>
       </div>
     </div>
+
   );
 }
