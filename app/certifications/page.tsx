@@ -46,7 +46,7 @@ export default function Certs() {
       {/* Footer */}
       <div className="border-t border-[#00FFCC55] pt-4 text-xs text-pretty text-[#FF4444] flex items-center gap-2">
         <AlertCircleIcon size={16} />
-        <span>User is currently behind schedule on CS50 — ETC: 1 July 2025.</span>
+        <span>Certificates? Yeah. But the real skill came from breaking stuff and fixing it.</span>
       </div>
     </div>
   );
