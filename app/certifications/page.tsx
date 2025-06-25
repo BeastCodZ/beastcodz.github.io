@@ -35,7 +35,7 @@ export default function Certs() {
         <Trophy size={28} className="min-w-[28px]" />
         <div>
           <h3 className="text-md font-semibold">CS50x: Introduction to Computer Science</h3>
-          <p className="text-sm">Harvard University via edX <span className="mx-2">|</span> <span className='text-yellow-400'>In Progress</span></p>
+          <p className="text-sm">Harvard University via edX <span className="mx-2">|</span> June 2025</span></p>
           <p className="text-xs mt-2 text-[#00ffccaa] italic">
             &ldquo;CS50 didn’t teach me how to code. It taught me how to solve problems like an engineer.&rdquo;
           </p>
