@@ -128,7 +128,7 @@ export default function Certs() {
       {/* Grouped by issuer, paginated */}
       {Object.entries(grouped)
         .slice(page * PAGE_SIZE, (page + 1) * PAGE_SIZE)
-        .map(([issuer, certsArr], i) => (
+        .map(([issuer, certsArr]) => (
           <div key={issuer} className="mb-8 flex flex-col items-start gap-4">
             <div className="flex items-start gap-4">
               <span>{issuerIcons[issuer]}</span>
