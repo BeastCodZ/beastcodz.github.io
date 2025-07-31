@@ -13,7 +13,7 @@ export default function NotFound() {
     "Path invalid. User IQ questionable.",
     "Your search returned: air.",
     "Good news: you found a void. Bad news: that's all you found.",
-    "Another broken URL. Another disappointment."
+    "Another broken URL. Another disappointment.",
   ];
 
   const lostLines = [
@@ -21,7 +21,7 @@ export default function NotFound() {
     "Lost again? Maybe read the URL next time.",
     "You tried. You failed. Try the homepage.",
     "You wandered too far, genius.",
-    "Wrong turn, champ. No map will save you."
+    "Wrong turn, champ. No map will save you.",
   ];
 
   const recoveryLines = [
@@ -29,7 +29,7 @@ export default function NotFound() {
     "Execute and pretend this never happened.",
     "Use this command. Try not to mess up again.",
     "Home awaits. Don't break it this time.",
-    "Return quietly. I won't mention this to anyone."
+    "Return quietly. I won't mention this to anyone.",
   ];
 
   const subs = [
@@ -37,7 +37,7 @@ export default function NotFound() {
     "Impressive. You found a digital black hole.",
     "Nothing here. Keep walking, champ.",
     "Zero bytes. Zero hope.",
-    "There's no path here. Only regret."
+    "There's no path here. Only regret.",
   ];
 
   const footers = [
@@ -45,12 +45,13 @@ export default function NotFound() {
     "Session ended. Try not to break it next time.",
     "Nothing here. Nothing learned.",
     "Process killed. Next time, read the docs.",
-    "Error handled. User still unhandled."
+    "Error handled. User still unhandled.",
   ];
 
   const insult = burns[Math.floor(Math.random() * burns.length)];
   const lostLine = lostLines[Math.floor(Math.random() * lostLines.length)];
-  const recoveryLine = recoveryLines[Math.floor(Math.random() * recoveryLines.length)];
+  const recoveryLine =
+    recoveryLines[Math.floor(Math.random() * recoveryLines.length)];
   const sub = subs[Math.floor(Math.random() * subs.length)];
   const footer = footers[Math.floor(Math.random() * footers.length)];
 

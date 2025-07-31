@@ -6,7 +6,6 @@ import type { Engine } from "tsparticles-engine";
 
 const Particle = () => {
   const particlesInit = useCallback(async (engine: Engine): Promise<void> => {
-    // Load the full package of tsparticles
     await loadFull(engine);
   }, []);
 
@@ -31,10 +30,9 @@ const Particle = () => {
         move: {
         enable: true,
         speed: 1.33,
-        outModes: { default: "bounce" }, // outModes options: "bounce", "out", "destroy", "none", "split"
+        outModes: { default: "bounce" }, 
         },
         number: { density: { enable: true, area: 800 }, value: 100 },
-        // shape types: "circle", "edge", "triangle", "polygon", "star", "char", "image", "square"
         shape: { type: "none" },
         size: { value: { min: 1, max: 4 } },
       },

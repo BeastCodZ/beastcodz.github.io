@@ -1,4 +1,4 @@
-import { Mail, Send, AlertCircle, Linkedin, Github } from 'lucide-react';
+import { Mail, Send, AlertCircle, Linkedin, Github } from "lucide-react";
 
 export default function Contact() {
   return (
@@ -10,10 +10,12 @@ export default function Contact() {
             &gt; ping → <span className="text-[#FF4444]">BeastCodZ</span>
           </h3>
           <p className="text-sm mt-1">
-            Interested to talk? I’m all ears (and fingers). Reach out – I don’t ghost (unless it’s system updates).
+            Interested to talk? I’m all ears (and fingers). Reach out – I don’t
+            ghost (unless it’s system updates).
           </p>
           <p className="text-sm mt-2 text-[#00ffccaa]">
-            Whether it’s freelance work, collaboration, or nerd banter, my inbox doesn’t bite.
+            Whether it’s freelance work, collaboration, or nerd banter, my inbox
+            doesn’t bite.
           </p>
 
           <div className="mt-4 flex flex-col items-center flex-wrap gap-2">
