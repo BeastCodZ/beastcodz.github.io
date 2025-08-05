@@ -6,14 +6,14 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 
 const links = [
-  { href: "/", label: "<Home>" },
-  { href: "/about", label: "<About>" },
+  { href: "/", label: "<About>" },
   { href: "/skills", label: "<Skills>" },
   { href: "/certifications", label: "<Certs>" },
   { href: "/projects", label: "<Projects>" },
   { href: "/education", label: "<Education>" },
   { href: "/contact", label: "<Contact>" },
   { href: "/misc", label: "<Misc>" },
+  { href: "/terminal", label: "<Terminal>" },
 ];
 export default function Nav() {
   const pathname = usePathname();

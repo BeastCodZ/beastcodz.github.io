@@ -109,6 +109,8 @@ const PAGE_SIZE = 2;
 
 export default function Certs() {
   const [page, setPage] = useState(0);
+  const maxPages = Math.ceil(Object.keys(grouped).length / PAGE_SIZE);
+
   return (
     <div className="bg-[#146d5b07] text-[#00FFCC] p-6 md:p-10 rounded-2xl shadow-lg backdrop-blur-sm transition-all duration-300 ease-in-out max-w-4xl mx-auto z-1">
       {/* Header */}
@@ -119,8 +121,7 @@ export default function Certs() {
             &gt; cat → <span className="text-[#FF4444]">certificates.txt</span>
           </h3>
           <p className="text-sm mt-1 text-pretty">
-            Real stuff. Real effort. No AI badges or &ldquo;You watched a
-            video!&rdquo; trophies.
+            Validated knowledge. Backed by hands-on work, not just course completion.
           </p>
         </div>
       </div>
@@ -137,10 +138,8 @@ export default function Certs() {
                 <div className="mb-2">
                   {certsArr.map((cert, idx) => (
                     <div key={idx} className="mb-2">
-                      <div className="flex flex-row justify">
-                        <p className="text-sm">{cert.title}</p>
-                      </div>
-                      <p className="text-xs mt-2 text-[#00ffccaa] italic">
+                      <p className="text-sm">{cert.title}</p>
+                      <p className="text-xs mt-1 text-[#00ffccaa] italic">
                         {cert.skills}
                       </p>
                     </div>
@@ -163,9 +162,7 @@ export default function Certs() {
           ◀
         </motion.button>
         <div className="flex items-center gap-1">
-          {Array.from({
-            length: Math.ceil(Object.keys(grouped).length / PAGE_SIZE),
-          }).map((_, idx) => (
+          {Array.from({ length: maxPages }).map((_, idx) => (
             <span
               key={idx}
               className={`w-2 h-2 rounded-full ${
@@ -174,13 +171,12 @@ export default function Certs() {
             />
           ))}
         </div>
-
         <motion.button
           whileHover={{ scale: 1.1, backgroundColor: "#00FFCC44" }}
           whileTap={{ scale: 0.95, backgroundColor: "#00FFCC66" }}
           className="px-3 py-1 rounded bg-[#00FFCC22] text-[#00FFCC] disabled:opacity-50"
           onClick={() => setPage(page + 1)}
-          disabled={page == 2}
+          disabled={page === maxPages - 1}
         >
           ▶
         </motion.button>
@@ -190,8 +186,7 @@ export default function Certs() {
       <div className="border-t border-[#00FFCC55] pt-4 text-xs text-pretty text-[#FF4444] flex items-center gap-2">
         <AlertCircleIcon size={16} />
         <span>
-          Certificates? Yeah. But the real skill came from breaking stuff and
-          fixing it.
+          Certificates prove knowledge. Building and breaking things prove mastery.
         </span>
       </div>
     </div>

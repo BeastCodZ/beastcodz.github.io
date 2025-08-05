@@ -3,6 +3,7 @@ import { Mail, Send, AlertCircle, Linkedin, Github } from "lucide-react";
 export default function Contact() {
   return (
     <div className="bg-[#146d5b07] text-[#00FFCC] p-6 md:p-10 rounded-2xl shadow-lg backdrop-blur-sm transition-all duration-300 ease-in-out max-w-4xl mx-auto z-1">
+      {/* Header */}
       <div className="mb-8 flex flex-col items-start gap-4">
         <Mail size={32} className="min-w-[32px]" />
         <div>
@@ -10,12 +11,10 @@ export default function Contact() {
             &gt; ping → <span className="text-[#FF4444]">BeastCodZ</span>
           </h3>
           <p className="text-sm mt-1">
-            Interested to talk? I’m all ears (and fingers). Reach out – I don’t
-            ghost (unless it’s system updates).
+            Got a project, collaboration, or just want to talk tech? I’m open to hearing it.
           </p>
           <p className="text-sm mt-2 text-[#00ffccaa]">
-            Whether it’s freelance work, collaboration, or nerd banter, my inbox
-            doesn’t bite.
+            I reply fast unless the Wi-Fi gives up or I’m working on a project.
           </p>
 
           <div className="mt-4 flex flex-col items-center flex-wrap gap-2">
@@ -41,9 +40,10 @@ export default function Contact() {
         </div>
       </div>
 
+      {/* Footer */}
       <div className="border-t border-[#00FFCC55] pt-4 text-xs text-[#FF4444] flex items-center gap-2">
         <AlertCircle size={16} />
-        <span>Responses may vary depending on person and Wi-Fi stability.</span>
+        <span>Ping received. Response time depends on caffeine levels.</span>
       </div>
     </div>
   );

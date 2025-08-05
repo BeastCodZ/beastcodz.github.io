@@ -11,12 +11,12 @@ export default function Skills() {
             &gt; cat → <span className="text-[#FF4444]">skills.txt</span>
           </h3>
           <p className="text-sm mt-1 text-pretty">
-            Polished through trial, not tutorials. Every skill here has been
-            battlefield-tested.
+            A toolkit built through real projects, hands-on practice, and constant iteration.
           </p>
         </div>
       </div>
 
+      {/* Core Tech Stack */}
       <div className="mb-8 flex flex-col items-start gap-4">
         <div className="flex items-start gap-4">
           <Code2 size={28} className="min-w-[28px] mt-1" />
@@ -25,13 +25,11 @@ export default function Skills() {
             <p className="text-sm">
               C, Python, JavaScript, Next.js, Node.js, MongoDB, MySQL
             </p>
-            <p className="text-xs mt-2 text-[#00ffccaa] italic">
-              &ldquo;Stacked, loaded, and ready to deploy.&rdquo;
-            </p>
           </div>
         </div>
       </div>
 
+      {/* Dev & OS Tools */}
       <div className="mb-8 flex flex-col items-start gap-4">
         <div className="flex items-start gap-4">
           <Terminal size={28} className="min-w-[28px]" />
@@ -47,25 +45,18 @@ export default function Skills() {
                 </a>
               </span>
             </p>
-            <p className="text-xs mt-2 text-[#00ffccaa] italic">
-              &ldquo;My trusty sidekicks in the coding realm.&rdquo;
-            </p>
           </div>
         </div>
       </div>
 
+      {/* Other Skills */}
       <div className="mb-8 flex flex-col items-start gap-4">
         <div className="flex items-start gap-4">
           <Bot size={28} className="min-w-[28px]" />
           <div>
             <h3 className="text-md font-semibold">Other Skills</h3>
             <p className="text-sm">
-              126 WPM, Figma, Adobe Photoshop, Adobe Premiere Pro, Adobe After
-              Effects
-            </p>
-            <p className="text-xs mt-2 text-[#00ffccaa] italic">
-              &ldquo;Not flashy, just effective — skills that speak for
-              themselves.&rdquo;
+              126 WPM, Figma, Adobe Photoshop, Adobe Premiere Pro, Adobe After Effects
             </p>
           </div>
         </div>
@@ -74,7 +65,7 @@ export default function Skills() {
       {/* Footer */}
       <div className="border-t border-[#00FFCC55] pt-4 text-xs text-pretty text-[#00ffcc99] flex items-center gap-2">
         <Bot size={16} />
-        <span>What’s listed here isn’t theory, it’s forged in practice.</span>
+        <span>Every skill listed here is backed by practice, not just theory.</span>
       </div>
     </div>
   );

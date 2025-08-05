@@ -18,11 +18,12 @@ export default function Projects() {
               &gt; projects → <span className="text-[#FF4444]">BeastCodZ</span>
             </h3>
             <p className="text-sm mt-1 break-words">
-              Built with efforts, powered by choco milk and a bit of madness.
+              Practical builds. Minimal fluff. Every project sharpened by real-world use.
             </p>
           </div>
         </div>
 
+        {/* WinKey */}
         <a
           href="/projects/WinKey"
           className="snap-start flex flex-col items-start gap-4 hover:bg-[#00ffcc11] rounded-xl transition-colors duration-75 focus:outline-none focus:ring-2 focus:ring-[#00FFCC] cursor-pointer p-4"
@@ -37,15 +38,16 @@ export default function Projects() {
                 Electron.js • TOTP • Local Storage • Cross-Platform
               </p>
               <p className="text-xs mt-2 text-[#00ffccaa] italic">
-                &ldquo;Because trusting the cloud for OTPs is a rookie
-                move.&rdquo;
+                &ldquo;Because Security shouldn&apos;t be ugly.&rdquo;
               </p>
-              <span className="inline-flex items-center gap-1 text-[#FF4444] text-xs mt-2 ">
+              <span className="inline-flex items-center gap-1 text-[#FF4444] text-xs mt-2">
                 View Project <ExternalLink size={14} />
               </span>
             </div>
           </div>
         </a>
+
+        {/* FallenOS */}
         <a
           href="/projects/FallenOS"
           className="snap-start flex flex-col items-start gap-4 hover:bg-[#00ffcc11] rounded-xl transition-colors duration-75 focus:outline-none focus:ring-2 focus:ring-[#00FFCC] cursor-pointer p-4"
@@ -57,12 +59,12 @@ export default function Projects() {
                 FallenOS
               </h3>
               <p className="text-sm">
-                Arch Linux • Translucent • Cozy Environment
+                Arch Linux • Hyprland • Minimal Workflow
               </p>
               <p className="text-xs mt-2 text-[#00ffccaa] italic">
-                &ldquo;I use Arch, btw.&rdquo;
+                &ldquo;A custom Linux setup, engineered for speed and focus.&rdquo;
               </p>
-              <span className="inline-flex items-center gap-1 text-[#FF4444] text-xs mt-2 ">
+              <span className="inline-flex items-center gap-1 text-[#FF4444] text-xs mt-2">
                 View Project <ExternalLink size={14} />
               </span>
             </div>
@@ -73,7 +75,7 @@ export default function Projects() {
       {/* Sticky Footer */}
       <div className="border-t border-[#00FFCC55] px-6 py-4 text-xs text-pretty text-[#FF4444] flex items-center gap-2">
         <AlertTriangle size={20} />
-        <span>Fewer bugs than your life. But hey, never zero.</span>
+        <span>Projects ship. Bugs get fixed. That’s how real development works.</span>
       </div>
     </div>
   );
