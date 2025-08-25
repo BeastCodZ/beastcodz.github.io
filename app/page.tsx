@@ -12,8 +12,8 @@ export default function About() {
           </h3>
 
           <p className="text-sm sm:text-base mt-2 text-pretty">
-            I’m a <span className="text-[#FF4444]">developer</span> obsessed with understanding how things work—
-            and making them work better. Whether I&apos;m building tools, tweaking my system,
+            I’m a <span className="text-[#FF4444]">developer</span> obsessed with understanding how things work
+            and improving current solutions. Whether I&apos;m building tools, tweaking my system,
             or experimenting with new ideas, I stay <span className="text-[#FF4444]">ready()</span> by staying hands-on.
           </p>
 
@@ -37,3 +37,4 @@ export default function About() {
     </div>
   );
 }
+
