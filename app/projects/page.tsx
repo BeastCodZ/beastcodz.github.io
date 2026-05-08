@@ -5,7 +5,20 @@ import {
   Laptop2,
   LockIcon,
 } from "lucide-react";
+import type { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: "Projects | BeastCodZ",
+  description:
+    "A collection of projects built by BeastCodZ, mostly experimental development work.",
+  openGraph: {
+    title: "Projects | BeastCodZ",
+    description:
+      "Projects built with modern technologies and a focus on practical application.",
+    url: "https://beastcodz.github.io/projects",
+    images: ["/image.jpg"],
+  },
+};
 export default function Projects() {
   return (
     <div className="h-auto max-w-4xl mx-auto flex flex-col bg-[#146d5b07] text-[#00FFCC] rounded-2xl shadow-lg backdrop-blur-sm transition-all duration-300 ease-in-out">

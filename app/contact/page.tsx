@@ -1,5 +1,17 @@
 import { Mail, Send, AlertCircle, Linkedin, Github } from "lucide-react";
+import type { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: "Contact | BeastCodZ",
+  description:
+    "Get in touch for collaborations, projects, freelance work, or technical discussions related to development and systems engineering.",
+  openGraph: {
+    title: "Contact | BeastCodZ",
+    description:
+      "Reach out for collaborations, development work, or technical inquiries.",
+    url: "https://beastcodz.github.io/contact"
+  },
+};
 export default function Contact() {
   return (
     <div className="bg-[#146d5b07] text-[#00FFCC] p-6 md:p-10 rounded-2xl shadow-lg backdrop-blur-sm transition-all duration-300 ease-in-out max-w-4xl mx-auto z-1">

@@ -1,6 +1,21 @@
 import { Terminal, Cog, Shield, AlertTriangle, Laptop2 } from "lucide-react";
 import Image from "next/image";
 
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "FallenOS – Hyprland Linux Setup & Workflow",
+  description:
+    "FallenOS is a customized Arch Linux + Hyprland setup focused on productivity, minimalism, and developer workflow optimization.",
+  openGraph: {
+    title: "FallenOS – Linux Workflow Environment",
+    description:
+      "A minimal Arch + Hyprland setup optimized for development and productivity.",
+    url: "https://beastcodz.github.io/projects/FallenOS",
+    images: ["/projects/FallenOS/arch.png"],
+  },
+};
+
 export default function FallenOS() {
   return (
     <div className="bg-[#146d5b07] text-[#00FFCC] overflow-hidden p-6 md:p-10 rounded-2xl shadow-lg backdrop-blur-sm transition-all duration-300 ease-in-out max-w-4xl mx-auto z-1 max-h-screen flex flex-col">

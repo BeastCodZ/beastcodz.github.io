@@ -1,6 +1,20 @@
 import { LockIcon, Clock, AlertTriangle, QrCode, Zap } from "lucide-react";
 import Image from "next/image";
 
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "WinKey – Lightweight Desktop Authenticator",
+  description:
+    "WinKey is a clean, bloatfree desktop authenticator built with Electron. It’s lightweight, offline-first, and focused on one thing: generating secure TOTP codes without unnecessary clutter.",
+  openGraph: {
+    title: "WinKey – Lightweight Desktop Authenticator",
+    description:
+      "A minimal Electron app for generating secure TOTP codes offline.",
+    url: "https://beastcodz.github.io/projects/WinKey",
+    images: ["/projects/WinKey/winkey.png"],
+  },
+};
 export default function WinKey() {
   return (
     <div className="bg-[#146d5b07] text-[#00FFCC] p-6 md:p-10 rounded-2xl shadow-lg backdrop-blur-sm transition-all duration-300 ease-in-out max-w-4xl mx-auto z-1 max-h-screen flex flex-col overflow-hidden">
