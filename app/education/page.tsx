@@ -63,13 +63,13 @@ export default function Education() {
               Thapar Institute of Engineering & Technology
             </h3>
             <p className="text-sm">
-              B.E. in Electrical Engineering | 2025–2029
+              B.E. in <span className="line-through">Electrical</span> Computer Engineering | 2025–2029
             </p>
             <p className="text-xs mt-2 italic text-[#00ffccaa]">
-              &ldquo;Starting here, aiming higher, this is just step one.&rdquo;
+              &ldquo;Y1:Starting here, aiming higher, this is just step one.&rdquo;
             </p>
-            <p className="text-xs mt-1 text-[#FF4444] font-mono">
-              Currently grinding for an internal branch upgrade to Computer Science Engineering.
+            <p className="text-xs mt-2 italic text-[#00ffccaa]">
+              &ldquo;Y2:Rough Start, But Making Progress.&rdquo;
             </p>
           </div>
         </div>
