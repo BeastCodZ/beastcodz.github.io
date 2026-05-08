@@ -6,7 +6,7 @@ import localFont from "next/font/local";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://beastcodz.github.io"),
-  title: "BeastCodZ | Developer & Tinkerer",
+  title: "BeastCodZ | Full Stack Developer & Systems Developer",
   description:
     "Tinkering with tech, breaking the rules, and building what matters. Code meets chaos and every byte tells a story. Because even mediocrity has standards.",
   keywords:
@@ -17,6 +17,18 @@ export const metadata: Metadata = {
       url: "https://github.com/BeastCodZ",
     },
   ],
+  verification: {
+    google: "No1F5WTfQe4-jDTcQpVzZWVuhEfw7jvtDd1d7j1eEf0",
+  },
+  twitter: {
+  card: "summary_large_image",
+  title: "BeastCodZ | Systems Developer",
+  description: "Building tools, Linux workflows, and desktop apps.",
+  images: ["/image.jpg"],
+},
+  alternates: {
+  canonical: "https://beastcodz.github.io",
+},
   openGraph: {
     title: "BeastCodZ | Code Alchemist & Tinkerer of the Stack",
     description:
