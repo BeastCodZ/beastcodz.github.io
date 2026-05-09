@@ -1,4 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<sitemap><loc>https://beastcodz.github.io/sitemap-0.xml</loc></sitemap>
-</sitemapindex>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<url>
+  <loc>https://beastcodz.github.io/</loc>
+  <lastmod>2026-05-08T07:15:54+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://beastcodz.github.io/skills</loc>
+  <lastmod>2026-05-08T07:15:54+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://beastcodz.github.io/certifications</loc>
+  <lastmod>2026-05-08T07:15:54+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://beastcodz.github.io/projects</loc>
+  <lastmod>2026-05-08T07:15:54+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://beastcodz.github.io/education</loc>
+  <lastmod>2026-05-08T07:15:53+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://beastcodz.github.io/contact</loc>
+  <lastmod>2026-05-08T07:15:54+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://beastcodz.github.io/misc</loc>
+  <lastmod>2026-05-08T07:15:54+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://beastcodz.github.io/terminal</loc>
+  <lastmod>2026-05-08T07:15:54+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://beastcodz.github.io/projects/FallenOS</loc>
+  <lastmod>2026-05-08T07:15:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://beastcodz.github.io/projects/WinKey</loc>
+  <lastmod>2026-05-08T07:15:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>
