@@ -41,7 +41,7 @@ export default function Particle() {
               enable: true,
               area: 800,
             },
-            value: 100,
+            value: 40,
           },
           opacity: {
             value: {

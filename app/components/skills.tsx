@@ -17,7 +17,7 @@ import {
   AfterEffects,
   React,
 } from "@thesvg/react";
-import { AlertCircle, Wrench } from "lucide-react";
+import { AlertTriangle, Wrench } from "lucide-react";
 import { SiNextdotjs,SiPostgresql, SiPython, SiGithub, SiTailwindcss, SiElectron, SiExpress } from "react-icons/si";
 
 export default function Skills() {
@@ -233,21 +233,21 @@ export default function Skills() {
           ))}
         </div>
       </div>
-
-      <p
+      <div
         className="
-          mt-6
+        mt-6 pt-4
           border-t border-[var(--border)]
-          pt-4
           flex items-center gap-2
           text-xs
-          text-[var(--text-muted)]
+          text-[var(--accent)]
         "
       >
-        <AlertCircle size={14} />
-        Every skill listed here is backed by practical use, experimentation, or
-        real-world projects.
-      </p>
+        <AlertTriangle size={20} />
+
+        <span>
+          Every skill listed here is backed by experimentation, or projects.
+        </span>
+      </div>
     </section>
   );
 }

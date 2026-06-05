@@ -1,9 +1,9 @@
-import {
-  AlertCircle,
+import { Linkedin } from "@thesvg/react";
+import {  
   Mail,
-  Github,
-  Linkedin,
+  AlertTriangle,
 } from "lucide-react";
+import { FaGithub } from "react-icons/fa";
 
 
 export default function Contact() {
@@ -56,7 +56,7 @@ export default function Contact() {
 
       {/* Contact Methods */}
 
-      <div className="grid md:grid-cols-3">
+      <div className="grid md:grid-cols-2 gap-4">
         <a
           href="mailto:manan19340@gmail.com"
           className="
@@ -83,7 +83,7 @@ export default function Contact() {
             transition-colors
           "
         >
-          <Github size={16} />
+          <FaGithub width={16} height={16} />
           github.com/beastcodz
         </a>
 
@@ -99,7 +99,7 @@ export default function Contact() {
             transition-colors
           "
         >
-          <Linkedin size={16} />
+          <Linkedin width={16} height={16} className="text-[#0072B1]" />
           linkedin.com/in/beastcodz
         </a>
       </div>
@@ -149,7 +149,7 @@ export default function Contact() {
           text-[var(--accent)]
         "
       >
-        <AlertCircle size={18} />
+        <AlertTriangle size={18} />
 
         <span>
           Response time varies between a few

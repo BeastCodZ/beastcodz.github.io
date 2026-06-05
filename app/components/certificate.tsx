@@ -168,32 +168,22 @@ export default function Certifications() {
                     "
                 >
                   • {cert.title}
-                  <a
-                    href={cert.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-[var(--accent)] hover:underline"
-                  >
-                    View
-                  </a>
                 </li>
               ))}
             </ul>
           </div>
         ))}
       </div>
-
-      <div
+<div
         className="
-          mt-6
+        mt-6 pt-4
           border-t border-[var(--border)]
-          pt-4
           flex items-center gap-2
           text-xs
-          text-[var(--text-muted)]
+          text-[var(--accent)]
         "
       >
-        <AlertCircle size={14} />
+        <AlertCircle size={18} />
 
         <span>
           Certificates validate knowledge. Projects validate execution.

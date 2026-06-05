@@ -15,7 +15,7 @@ export default function RecentActivityCard() {
 
   return (
     <>
-      <div className="flex items-center justify-between mb-4">
+      <div className="flex flex-col items-center justify-between mb-4">
         <h3 className="text-base font-semibold text-[var(--text-primary)]">
           Recent Activity
         </h3>
@@ -26,8 +26,8 @@ export default function RecentActivityCard() {
       </div>
 
       {activity ? (
-        <>
-          <div>
+        <div className="grid grid-cols-2">
+          <div className="flex flex-col items-center">
             <p className="text-xs text-[var(--text-muted)]">
               Project Name
             </p>
@@ -37,7 +37,7 @@ export default function RecentActivityCard() {
             </p>
           </div>
 
-          <div className="mt-4">
+          <div className="flex flex-col items-center">
             <p className="text-xs text-[var(--text-muted)]">
               Updated
             </p>
@@ -46,12 +46,12 @@ export default function RecentActivityCard() {
               {daysAgo} days ago
             </p>
           </div>
-        </>
+        </div>
       ) : (
         <>
           <div>
             
-            <p className="text-sm text-[var(--text-primary)]">
+            <p className="text-sm text-[var(--text-primary)] text-center">
               No recent activity available.
             </p>
           </div>

@@ -1,4 +1,4 @@
-import { AlertCircleIcon, GraduationCap } from "lucide-react";
+import { AlertTriangle, GraduationCap } from "lucide-react";
 import Image from "next/image";
 export default function Education() {
   return (
@@ -123,18 +123,21 @@ export default function Education() {
 </div>
       </div>
 
-      <p
+      <div
         className="
-          mt-6
+          mt-6 pt-4
           border-t border-[var(--border)]
-          pt-4
           flex items-center gap-2
           text-xs
-          text-[var(--text-muted)]
+          text-[var(--accent)]
         "
       >
-        <AlertCircleIcon size={14} /> The fundamentals learned here continue to shape every project built today.
-      </p>
+        <AlertTriangle size={18} />
+
+        <span>
+          The fundamentals learned here continue to shape every project built today.
+        </span>
+      </div>
     </section>
   );
 }

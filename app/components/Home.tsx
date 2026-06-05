@@ -1,4 +1,4 @@
-import { AlertCircle, UserCircle2 } from "lucide-react";
+import { AlertTriangle, UserCircle2 } from "lucide-react";
 import RecentActivityCard from "./Recentactivitycard";
 import Link from "next/link"
 
@@ -39,7 +39,7 @@ export default function Home() {
             text-[var(--text-muted)]
           "
         >
-          Full Stack Developer • Computer Engineering Student
+          Full Stack Developer • Software Engineer
         </p>
 
         <p
@@ -54,19 +54,9 @@ export default function Home() {
       </div>
 
       {/* Cards */}
-      <div className="grid w-full grid-cols-1 md:grid-cols-2 gap-4">
+      <div className="grid w-full grid-cols-1 gap-4">
         {/* Current Status */}
-        <div
-          className="
-    rounded-3xl
-    border border-[var(--border)]
-    bg-[var(--surface)]
-    backdrop-blur-md
-    p-4
-  "
-        >
-          <RecentActivityCard />
-        </div>
+        
 
         {/* Highlighted Work */}
         <div
@@ -74,7 +64,7 @@ export default function Home() {
     rounded-3xl
     border border-[var(--border)]
     bg-[var(--surface)]
-    backdrop-blur-md
+    backdrop-blur-md w-full
     p-4
   "
         >
@@ -89,7 +79,7 @@ export default function Home() {
             Project Status
           </h3>
 
-          <div className="space-y-4">
+          <div className="space-x-4 flex flex-col md:flex-row">
             {/* FallenKey */}
             <div>
               <div className="flex flex-col">
@@ -128,8 +118,7 @@ export default function Home() {
             {/* UniLost */}
             <div
               className="
-        border-t border-[var(--border)]
-        pt-4
+        pt-4 md:pl-4
       "
             >
               <div className="flex flex-col">
@@ -180,7 +169,17 @@ export default function Home() {
             View All Projects →
           </Link>
         </div>
-        
+        <div
+          className="
+    rounded-3xl
+    border border-[var(--border)]
+    bg-[var(--surface)]
+    backdrop-blur-md
+    p-4
+  "
+        >
+          <RecentActivityCard />
+        </div>
       </div>
 <div
         className="
@@ -191,7 +190,7 @@ export default function Home() {
           text-[var(--accent)]
         "
       >
-        <AlertCircle size={18} />
+        <AlertTriangle size={18} />
 
         <span>
           Warning: User may be mood-oriented. Sarcasm included by
