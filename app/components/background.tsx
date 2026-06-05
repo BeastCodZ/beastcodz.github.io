@@ -1,11 +1,12 @@
 "use client";
+
 import { useCallback } from "react";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 import type { Engine } from "tsparticles-engine";
 
-const Particle = () => {
-  const particlesInit = useCallback(async (engine: Engine): Promise<void> => {
+export default function Particle() {
+  const particlesInit = useCallback(async (engine: Engine) => {
     await loadFull(engine);
   }, []);
 
@@ -13,33 +14,60 @@ const Particle = () => {
     <Particles
       id="tsparticles"
       init={particlesInit}
+      className="fixed inset-0 -z-20"
       options={{
-      background: {
-        color: { value: "#0d0d0d" },
-      },
-      fpsLimit: 60,
-      particles: {
-        color: { value: "#ffffff" },
-        links: {
-        color: "#ffffff",
-        distance: 150,
-        enable: true,
-        opacity: 0.2,
-        width: 1,
+        fullScreen: false,
+        fpsLimit: 30,
+        particles: {
+          color: {
+            value: "#FF4444",
+          },
+          links: {
+            enable: true,
+            color: "#FF4444",
+            distance: 120,
+            opacity: 0.1,
+            width: 1,
+          },
+          move: {
+            enable: true,
+            speed: 1,
+            outModes: {
+              default: "bounce",
+            },
+          },
+          number: {
+            density: {
+              enable: true,
+              area: 800,
+            },
+            value: 100,
+          },
+          opacity: {
+            value: {
+              min: 0.02,
+              max: 0.15,
+            },
+          },
+          size: {
+            value: {
+              min: 0.5,
+              max: 1.5,
+            },
+          },
         },
-        move: {
-        enable: true,
-        speed: 1.33,
-        outModes: { default: "bounce" }, 
+        interactivity: {
+          events: {
+            onHover: {
+              enable: false,
+            },
+            onClick: {
+              enable: false,
+            },
+          },
         },
-        number: { density: { enable: true, area: 800 }, value: 100 },
-        shape: { type: "none" },
-        size: { value: { min: 1, max: 4 } },
-      },
-      detectRetina: true,
+        detectRetina: false,
       }}
-    ></Particles>
+    />
   );
-};
-
-export default Particle;
+}

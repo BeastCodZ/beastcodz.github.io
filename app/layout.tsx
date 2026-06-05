@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Nav from "./nav";
 import Particle from "./components/background";
-import localFont from "next/font/local";
+import {JetBrains_Mono} from "next/font/google"
+
+const jetbrain = JetBrains_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://beastcodz.github.io"),
@@ -21,14 +22,14 @@ export const metadata: Metadata = {
     google: "No1F5WTfQe4-jDTcQpVzZWVuhEfw7jvtDd1d7j1eEf0",
   },
   twitter: {
-  card: "summary_large_image",
-  title: "BeastCodZ | Systems Developer",
-  description: "Building tools, Linux workflows, and desktop apps.",
-  images: ["/image.jpg"],
-},
+    card: "summary_large_image",
+    title: "BeastCodZ | Systems Developer",
+    description: "Building tools, Linux workflows, and desktop apps.",
+    images: ["/image.jpg"],
+  },
   alternates: {
-  canonical: "https://beastcodz.github.io",
-},
+    canonical: "https://beastcodz.github.io",
+  },
   openGraph: {
     title: "BeastCodZ | Code Alchemist & Tinkerer of the Stack",
     description:
@@ -37,36 +38,45 @@ export const metadata: Metadata = {
     type: "website",
   },
 };
-const Caskaydia = localFont({
-  src: [
-    {
-      path: "../fonts/CaskaydiaCoveNerdFont-Regular.ttf",
-      weight: "400",
-      style: "normal",
-    },
-  ],
-  display: "swap",
-});
+
 
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body className={`${Caskaydia.className} antialiased`}>
-        <div className="absolute inset-0 -z-10">
-          <Particle />
-        </div>
+      <body className={`${jetbrain.className} antialiased`}>
+        <>
+          {/* Gradient */}
+          <div
+            className="fixed inset-0 -z-20"
+            style={{
+              background: `
+        radial-gradient(
+          circle at top right,
+          rgba(255,68,68,0.2),
+          transparent 35%
+        ),
+        radial-gradient(
+          circle at bottom left,
+          rgba(255,68,68,0.15),
+          transparent 35%
+        ),
+        linear-gradient(
+          180deg,
+          #090606 0%,
+          #110707 100%
+        )
+      `,
+            }}
+          />
 
-        <main className="relative flex flex-col md:flex-row items-center md:items-stretch z-10 min-h-screen">
-          <div className="w-full md:w-1/4 p-4 flex justify-center md:justify-end items-center md:items-center">
-            <Nav />
-          </div>
-          <div className="w-full md:w-3/4 flex justify-center items-center p-4">
-            <div className="w-full max-w-3xl flex flex-col items-center justify-center h-full">
-              {children}
-            </div>
-          </div>
+          {/* Graph */}
+          <Particle />
+        </>
+
+        <main className="relative flex flex-col items-center md:items-stretch z-10 min-h-dvh">
+          {children}
         </main>
       </body>
     </html>

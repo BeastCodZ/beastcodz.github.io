@@ -1,194 +1,204 @@
-"use client"
-import {
-  BadgeCheck,
-  Trophy,
-  GraduationCap,
-  AlertCircleIcon,
-  ShieldCheck,
-  Cpu,
-  BookOpen,
-} from "lucide-react";
-import { useState } from "react";
-import { motion } from "framer-motion";
+import { Cisco, Linkedin } from "@thesvg/react";
+import { AlertCircle, GraduationCap } from "lucide-react";
+import { SiEdx } from "react-icons/si";
 
 type Cert = {
   title: string;
   issuer: string;
-  date: string;
-  skills: string;
+  link: string;
 };
-const issuerIcons: Record<string, React.ReactNode> = {
-  "Google via Coursera": <BadgeCheck size={32} className="min-w-[32px]" />,
-  "Harvard University via edX": <Trophy size={32} className="min-w-[32px]" />,
-  Cisco: <Cpu size={32} className="min-w-[32px]" />,
-  "Johnson & Johnson via Forage": (
-    <BookOpen size={32} className="min-w-[32px]" />
-  ),
-  "LinkedIn Learning": <ShieldCheck size={32} className="min-w-[32px]" />,
-};
+
 const certs: Cert[] = [
   {
     title: "Google Cybersecurity",
     issuer: "Google via Coursera",
-    date: "Aug 2023",
-    skills:
-      "Network Security · Risk Assessment · Python · SQL · Information Security · Cybersecurity · Threat & Vulnerability Management · Linux · Risk Management · Information Systems · Cloud Computing · Network Analyzer",
+    link: "https://www.coursera.org/specializations/google-cybersecurity",
   },
   {
     title: "CS50x: Introduction to Computer Science",
     issuer: "Harvard University via edX",
-    date: "Jun 2025",
-    skills:
-      "C · CSS · SQLite · HTML · Computer Science · Flask · Python · SQL · Databases · Bootstrap",
+    link: "https://www.edx.org/course/cs50x-introduction-to-computer-science",
   },
   {
     title: "Computer Hardware Basics",
     issuer: "Cisco",
-    date: "Jun 2025",
-    skills: "Computer Hardware · Computer Hardware Troubleshooting",
+    link: "https://www.cisco.com/c/en/us/training-events/training-certifications/courses/computer-hardware-basics.html",
   },
   {
     title: "Introduction to IoT",
     issuer: "Cisco",
-    date: "Jun 2025",
-    skills: "Internet of Things (IoT) · Digital Transformation",
+    link: "https://www.cisco.com/c/en/us/training-events/training-certifications/courses/introduction-to-iot.html",
   },
   {
     title: "Operating Systems Basics",
     issuer: "Cisco",
-    date: "Jun 2025",
-    skills: "Operating Systems",
+    link: "https://www.cisco.com/c/en/us/training-events/training-certifications/courses/operating-systems-basics.html",
   },
+
   {
-    title: "Robotics and Controls Job Simulation",
-    issuer: "Johnson & Johnson via Forage",
-    date: "Jun 2025",
-    skills: "Python",
-  },
-  {
-    title: "Cybersecurity By Microsoft & LinkedIn",
+    title: "Cybersecurity",
     issuer: "LinkedIn Learning",
-    date: "Jul 2025",
-    skills:
-      "Cybersecurity · Threat & Vulnerability Management · Information Security Awareness",
+    link: "https://www.linkedin.com/learning/cybersecurity",
   },
   {
-    title: " System Administration By Microsoft & LinkedIn",
+    title: "System Administration",
     issuer: "LinkedIn Learning",
-    date: "Jul 2025",
-    skills: "System Administration · Network Administration",
+    link: "https://www.linkedin.com/learning/system-administration",
   },
   {
-    title: "Software Development By Microsoft & LinkedIn",
+    title: "Software Development",
     issuer: "LinkedIn Learning",
-    date: "Jun 2025",
-    skills:
-      "Programming · Computer Programming · Career Management · Software Development · Tech Career Skills",
+    link: "https://www.linkedin.com/learning/software-development",
   },
   {
-    title: "Docker Foundations Professional Certificate",
+    title: "Docker Foundations",
     issuer: "LinkedIn Learning",
-    date: "Jul 2025",
-    skills: "Containerization · Docker Products",
+    link: "https://www.linkedin.com/learning/docker-foundations",
   },
   {
-    title: "GitHub Professional Certificate",
+    title: "GitHub",
     issuer: "LinkedIn Learning",
-    date: "Jun 2025",
-    skills: "GitHub",
+    link: "https://www.linkedin.com/learning/github",
   },
 ];
 
-// Group by issuer
+const LogoWrapper = ({ children }: { children: React.ReactNode }) => (
+  <div className="flex h-6 w-6 items-center justify-center shrink-0">
+    {children}
+  </div>
+);
+
+const issuerIcons: Record<string, React.ReactNode> = {
+  "Google via Coursera": (
+    <LogoWrapper>
+      <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
+<path fill="#FFC107" d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12c0-6.627,5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24c0,11.045,8.955,20,20,20c11.045,0,20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z"></path><path fill="#FF3D00" d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z"></path><path fill="#4CAF50" d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z"></path><path fill="#1976D2" d="M43.611,20.083H42V20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"></path>
+</svg>
+</LogoWrapper>
+  ),
+
+  "Harvard University via edX": (
+    <LogoWrapper>
+      <SiEdx className="h-5 w-5 text-white" />
+    </LogoWrapper>
+  ),
+
+  Cisco: (
+    <LogoWrapper>
+      <Cisco className="h-6 w-6 text-[#049FD9]" />
+    </LogoWrapper>
+  ),
+
+  "LinkedIn Learning": (
+    <LogoWrapper>
+      <Linkedin className="h-5 w-5 text-[#0072B1]" />
+    </LogoWrapper>
+  ),
+};
+
 const grouped = certs.reduce<Record<string, Cert[]>>((acc, cert) => {
-  acc[cert.issuer] = acc[cert.issuer] ? [...acc[cert.issuer], cert] : [cert];
+  if (!acc[cert.issuer]) {
+    acc[cert.issuer] = [];
+  }
+
+  acc[cert.issuer].push(cert);
+
   return acc;
 }, {});
 
-const PAGE_SIZE = 2;
-
-export default function Certs() {
-  const [page, setPage] = useState(0);
-  const maxPages = Math.ceil(Object.keys(grouped).length / PAGE_SIZE);
-
+export default function Certifications() {
   return (
-    <div className="bg-[#146d5b07] text-[#00FFCC] p-6 md:p-10 rounded-2xl shadow-lg backdrop-blur-sm transition-all duration-300 ease-in-out max-w-4xl mx-auto z-1">
-      {/* Header */}
-      <div className="mb-8 flex flex-col items-start gap-4">
-        <GraduationCap size={32} className="min-w-[32px]" />
+    <section
+      id="certifications"
+      className="
+        mt-8
+        rounded-3xl
+        border border-[var(--border)]
+        bg-[var(--surface)]
+        backdrop-blur-xl
+        p-4 md:p-6
+      "
+    >
+      <div className="mb-6 flex items-center gap-3">
+        <GraduationCap size={22} className="text-[var(--accent)]" />
+
         <div>
-          <h3 className="text-lg font-semibold">
-            &gt; cat → <span className="text-[#FF4444]">certificates.txt</span>
-          </h3>
-          <p className="text-sm mt-1 text-pretty">
-            Validated knowledge. Backed by hands-on work, not just course completion.
+          <h2 className="text-lg font-semibold text-[var(--text-primary)]">
+            Certifications
+          </h2>
+
+          <p className="text-xs text-[var(--text-muted)]">
+            Structured learning backed by hands-on experimentation.
           </p>
         </div>
       </div>
 
-      {/* Grouped by issuer, paginated */}
-      {Object.entries(grouped)
-        .slice(page * PAGE_SIZE, (page + 1) * PAGE_SIZE)
-        .map(([issuer, certsArr]) => (
-          <div key={issuer} className="mb-8 flex flex-col items-start gap-4">
-            <div className="flex items-start gap-4">
-              <span>{issuerIcons[issuer]}</span>
-              <div>
-                <h3 className="text-md font-semibold">{issuer}</h3>
-                <div className="mb-2">
-                  {certsArr.map((cert, idx) => (
-                    <div key={idx} className="mb-2">
-                      <p className="text-sm">{cert.title}</p>
-                      <p className="text-xs mt-1 text-[#00ffccaa] italic">
-                        {cert.skills}
-                      </p>
-                    </div>
-                  ))}
-                </div>
-              </div>
+      <div className="grid gap-4 md:grid-cols-2">
+        {Object.entries(grouped).map(([issuer, issuerCerts]) => (
+          <div
+            key={issuer}
+            className="
+                rounded-2xl
+                border border-[var(--border)]
+                p-4
+              "
+          >
+            <div className="mb-3 flex items-center gap-2">
+              {issuerIcons[issuer]}
+
+              <h3
+                className="
+                    text-sm
+                    font-semibold
+                    text-[var(--text-primary)]
+                  "
+              >
+                {issuer}
+              </h3>
             </div>
+
+            <ul className="space-y-2">
+              {issuerCerts.map((cert) => (
+                <li
+                  key={cert.title}
+                  className="
+                      text-xs
+                      text-[var(--text-secondary)]
+                      flex flex-row justify-between
+                    "
+                >
+                  • {cert.title}
+                  <a
+                    href={cert.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[var(--accent)] hover:underline"
+                  >
+                    View
+                  </a>
+                </li>
+              ))}
+            </ul>
           </div>
         ))}
-
-      {/* Page Controls */}
-      <div className="flex justify-center items-center gap-4 mb-4">
-        <motion.button
-          whileHover={{ scale: 1.1, backgroundColor: "#00FFCC44" }}
-          whileTap={{ scale: 0.95, backgroundColor: "#00FFCC66" }}
-          className="px-3 py-1 rounded bg-[#00FFCC22] text-[#00FFCC] disabled:opacity-50"
-          onClick={() => setPage(page - 1)}
-          disabled={page === 0}
-        >
-          ◀
-        </motion.button>
-        <div className="flex items-center gap-1">
-          {Array.from({ length: maxPages }).map((_, idx) => (
-            <span
-              key={idx}
-              className={`w-2 h-2 rounded-full ${
-                idx === page ? "bg-[#00FFCC]" : "bg-[#00FFCC44]"
-              } transition-all`}
-            />
-          ))}
-        </div>
-        <motion.button
-          whileHover={{ scale: 1.1, backgroundColor: "#00FFCC44" }}
-          whileTap={{ scale: 0.95, backgroundColor: "#00FFCC66" }}
-          className="px-3 py-1 rounded bg-[#00FFCC22] text-[#00FFCC] disabled:opacity-50"
-          onClick={() => setPage(page + 1)}
-          disabled={page === maxPages - 1}
-        >
-          ▶
-        </motion.button>
       </div>
 
-      {/* Footer */}
-      <div className="border-t border-[#00FFCC55] pt-4 text-xs text-pretty text-[#FF4444] flex items-center gap-2">
-        <AlertCircleIcon size={16} />
+      <div
+        className="
+          mt-6
+          border-t border-[var(--border)]
+          pt-4
+          flex items-center gap-2
+          text-xs
+          text-[var(--text-muted)]
+        "
+      >
+        <AlertCircle size={14} />
+
         <span>
-          Certificates prove knowledge. Building and breaking things prove mastery.
+          Certificates validate knowledge. Projects validate execution.
         </span>
       </div>
-    </div>
+    </section>
   );
 }
