@@ -55,9 +55,8 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "BeastCodZ | Full Stack Developer | Software Engineer",
-    description:
-      "Building the Fallen ecosystem, desktop software, Linux workflows, and developer-focused tools.",
-    images: ["/image.webp"],
+    description: "I build software, tweak systems, and occasionally break both. If something catches my attention, chances are I'll end up learning it, building it, or overengineering it. Currently pursuing my bachelor's degree while strengthening my computer science fundamentals.",
+    images: ["/opengraph.png"],
   },
 
   alternates: {
@@ -65,12 +64,11 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: "BeastCodZ | Systems Developer & Builder",
-    description:
-      "Computer Engineering student building the Fallen ecosystem, desktop applications, Linux tooling, and developer-focused software.",
+    title: "BeastCodZ | Full Stack Developer | Software Engineer",
+    description: "I build software, tweak systems, and occasionally break both. If something catches my attention, chances are I'll end up learning it, building it, or overengineering it. Currently pursuing my bachelor's degree while strengthening my computer science fundamentals.",
     url: "https://beastcodz.github.io",
     type: "website",
-    images: ["/image.webp"],
+    images: ["/opengraph.png"],
   },
 };
 
