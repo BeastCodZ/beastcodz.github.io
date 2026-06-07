@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     title: "BeastCodZ | Full Stack Developer | Software Engineer",
     description:
       "Building the Fallen ecosystem, desktop software, Linux workflows, and developer-focused tools.",
-    images: ["/image.jpg"],
+    images: ["/image.webp"],
   },
 
   alternates: {
@@ -70,7 +70,7 @@ export const metadata: Metadata = {
       "Computer Engineering student building the Fallen ecosystem, desktop applications, Linux tooling, and developer-focused software.",
     url: "https://beastcodz.github.io",
     type: "website",
-    images: ["/image.jpg"],
+    images: ["/image.webp"],
   },
 };
 

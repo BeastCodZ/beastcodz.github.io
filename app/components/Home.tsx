@@ -6,7 +6,7 @@ import RecentActivityCard from "./Recentactivitycard";
 import ProjectStatusCard from "./ProjectStatusCard";
 
 import { projects } from "../data/projects";
-import Image from "next/image";
+import Me from "./Me"
 
 export default function Home() {
   return (
@@ -26,39 +26,7 @@ export default function Home() {
       {" "}
       <div className="mb-8 flex flex-col items-center gap-3 text-center">
         <div className="flex flex-col items-center gap-4 text-center">
-          <Image
-            src="/me.png"
-            alt="BeastCodZ"
-            width={92}
-            height={92}
-            className="
-      rounded-2xl
-      border border-(--border)
-    "
-          />
-
-          <div>
-            <h1
-              className="
-        text-3xl
-        font-bold
-        tracking-wide
-        text-(--text-primary)
-      "
-            >
-              Beast<span className="text-(--accent-soft)">CodZ</span>
-            </h1>
-
-            <p
-              className="
-        mt-1
-        text-xs
-        text-(--accent-soft)
-      "
-            >
-              Full Stack Developer • Software Engineer
-            </p>
-          </div>
+<Me/>
         </div>
 
         <p

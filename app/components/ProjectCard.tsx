@@ -1,6 +1,9 @@
+"use client";
+
 import Image from "next/image";
 import { ExternalLink } from "lucide-react";
-import { Project } from "../data/projects";
+import { motion } from "framer-motion";
+import type { Project } from "../data/projects";
 
 export default function ProjectCard({
   title,
@@ -12,17 +15,27 @@ export default function ProjectCard({
   description,
 }: Project) {
   return (
-    <a
+    <motion.a
       href={href}
+      whileHover={{
+        y: -4,
+        scale: 1.01,
+      }}
+      whileTap={{
+        scale: 0.99,
+      }}
+      transition={{
+        duration: 0.15,
+      }}
       className="
         block
         rounded-3xl
-        border border-(--border)
-        bg-(--surface)
+        border border-[var(--border)]
+        bg-[var(--surface)]
         backdrop-blur-md
         p-4
         transition-colors
-        hover:border-(--accent-soft)
+        hover:border-[var(--accent-soft)]
       "
     >
       <div className="flex items-start gap-3">
@@ -39,13 +52,25 @@ export default function ProjectCard({
             <h3
               className="
                 font-semibold
-                text-(--text-primary)
+                text-[var(--text-primary)]
               "
             >
               {title}
             </h3>
 
-            <ExternalLink size={16} className="text-(--accent-soft)" />
+            <motion.div
+              whileHover={{
+                x: 3,
+              }}
+              transition={{
+                duration: 0.15,
+              }}
+            >
+              <ExternalLink
+                size={16}
+                className="text-[var(--accent-soft)]"
+              />
+            </motion.div>
           </div>
 
           <p
@@ -63,13 +88,13 @@ export default function ProjectCard({
               mt-2
               text-xs
               leading-5
-              text-(--text-secondary)
+              text-[var(--text-secondary)]
             "
           >
             {description}
           </p>
         </div>
       </div>
-    </a>
+    </motion.a>
   );
 }

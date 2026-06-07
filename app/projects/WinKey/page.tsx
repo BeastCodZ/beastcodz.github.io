@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     title: "WinKey | BeastCodZ",
     description: "Legacy desktop authenticator and predecessor to FallenKey.",
     url: "https://beastcodz.github.io/projects/WinKey",
-    images: ["/projects/WinKey/winkey.png"],
+    images: ["/projects/WinKey/winkey.webp"],
   },
 };
 
@@ -35,8 +35,8 @@ export default function WinKey() {
     items-center
     gap-2
     text-sm
-    text-[var(--text-secondary)]
-    hover:text-[var(--accent-soft)]
+    text-(--text-secondary)
+    hover:text-(--accent-soft)
     transition-colors
   "
 >
@@ -49,10 +49,10 @@ export default function WinKey() {
           className="
         w-full max-w-4xl mx-auto
         rounded-3xl
-        bg-[var(--surface)]
+        bg-(--surface)
         backdrop-blur-xs
         border-2
-        border-[var(--border)]
+        border-(--border)
         bg-opacity-50
         p-4 md:p-8
         shadow-lg
@@ -61,9 +61,12 @@ export default function WinKey() {
           {/* Header */}
 
           <div className="mb-8 flex items-start gap-3">
-            <LockIcon
-              size={24}
-              className="text-[var(--text-primary)] shrink-0 mt-1"
+            <Image
+              src="/projects/WinKey/winkey.webp"
+              alt="WinKey"
+              width={64}
+              height={64}
+              className="rounded-lg shrink-0 sm:w-16"
             />
 
             <div>
@@ -72,7 +75,7 @@ export default function WinKey() {
               text-xl
               md:text-2xl
               font-semibold
-              text-[var(--text-primary)]
+              text-(--text-primary)
             "
               >
                 WinKey
@@ -82,10 +85,10 @@ export default function WinKey() {
                 className="
               mt-2
               text-sm
-              text-[var(--text-secondary)]
+              text-(--text-secondary)
             "
               >
-                Lightweight desktop authenticator that served as the foundation
+                Desktop authenticator that served as the foundation
                 for FallenKey.
               </p>
 
@@ -93,9 +96,9 @@ export default function WinKey() {
                 <span
                   className="
                 rounded-full
-                border border-[var(--border)]
+                border border-(--border)
                 px-2 py-0.5
-                text-[var(--accent)]
+                text-(--accent)
               "
                 >
                   Archived
@@ -105,8 +108,8 @@ export default function WinKey() {
                   href="/projects/Fallen"
                   className="
     flex items-center gap-1
-    text-[var(--text-secondary)]
-    hover:text-[var(--accent-soft)]
+    text-(--text-secondary)
+    hover:text-(--accent-soft)
     transition-colors
   "
                 >
@@ -122,8 +125,8 @@ export default function WinKey() {
           <div
             className="
           rounded-3xl
-          border border-[var(--border)]
-          bg-[var(--surface)]
+          border border-(--border)
+          bg-(--surface)
           backdrop-blur-md
           p-4
         "
@@ -133,7 +136,7 @@ export default function WinKey() {
             mb-3
             text-base
             font-semibold
-            text-[var(--text-primary)]
+            text-(--primary)
           "
             >
               Overview
@@ -143,7 +146,7 @@ export default function WinKey() {
               className="
             text-sm
             leading-6
-            text-[var(--text-secondary)]
+            text-(--text-secondary)
           "
             >
               WinKey was a desktop authenticator built to provide a clean and
@@ -156,7 +159,7 @@ export default function WinKey() {
             mt-3
             text-base
             font-semibold
-            text-[var(--text-primary)]
+            text-(--primary)
           "
             >
               Limitations
@@ -173,10 +176,10 @@ export default function WinKey() {
               <div
                 className="
       rounded-xl
-      border border-[var(--border)]
+      border border-(--border)
       p-3
       text-sm
-      text-[var(--text-secondary)]
+      text-(--text-secondary)
     "
               >
                 Huge bundle size due to Chromium
@@ -185,10 +188,10 @@ export default function WinKey() {
               <div
                 className="
       rounded-xl
-      border border-[var(--border)]
+      border border-(--border)
       p-3
       text-sm
-      text-[var(--text-secondary)]
+      text-(--text-secondary)
     "
               >
                 Limited platform support
@@ -197,10 +200,10 @@ export default function WinKey() {
               <div
                 className="
       rounded-xl
-      border border-[var(--border)]
+      border border-(--border)
       p-3
       text-sm
-      text-[var(--text-secondary)]
+      text-(--text-secondary)
     "
               >
                 Complexity in maintenance and updates
@@ -209,10 +212,10 @@ export default function WinKey() {
               <div
                 className="
       rounded-xl
-      border border-[var(--border)]
+      border border-(--border)
       p-3
       text-sm
-      text-[var(--text-secondary)]
+      text-(--text-secondary)
     "
               >
                 Resource-intensive operation
@@ -226,8 +229,8 @@ export default function WinKey() {
             className="
           mt-4
           rounded-3xl
-          border border-[var(--border)]
-          bg-[var(--surface)]
+          border border-(--border)
+          bg-(--surface)
           backdrop-blur-md
           p-4
         "
@@ -237,7 +240,7 @@ export default function WinKey() {
             mb-4
             text-base
             font-semibold
-            text-[var(--text-primary)]
+            text-(--primary)
           "
             >
               Key Features
@@ -245,29 +248,29 @@ export default function WinKey() {
 
             <div className="grid gap-4 md:grid-cols-2">
               <div className="flex items-center gap-3">
-                <Clock size={18} className="text-[var(--accent-soft)]" />
-                <span className="text-sm text-[var(--text-secondary)]">
+                <Clock size={18} className="text-(--accent-soft)" />
+                <span className="text-sm text-(--text-secondary)">
                   RFC 6238 compliant TOTP generation
                 </span>
               </div>
 
               <div className="flex items-center gap-3">
-                <Zap size={18} className="text-[var(--accent-soft)]" />
-                <span className="text-sm text-[var(--text-secondary)]">
+                <Zap size={18} className="text-(--accent-soft)" />
+                <span className="text-sm text-(--text-secondary)">
                   Instant offline authentication
                 </span>
               </div>
 
               <div className="flex items-center gap-3">
-                <QrCode size={18} className="text-[var(--accent-soft)]" />
-                <span className="text-sm text-[var(--text-secondary)]">
+                <QrCode size={18} className="text-(--accent-soft)" />
+                <span className="text-sm text-(--text-secondary)">
                   QR code onboarding workflow
                 </span>
               </div>
 
               <div className="flex items-center gap-3">
-                <LockIcon size={18} className="text-[var(--accent-soft)]" />
-                <span className="text-sm text-[var(--text-secondary)]">
+                <LockIcon size={18} className="text-(--accent-soft)" />
+                <span className="text-sm text-(--text-secondary)">
                   Local-first security model
                 </span>
               </div>
@@ -280,8 +283,8 @@ export default function WinKey() {
             className="
           mt-4
           rounded-3xl
-          border border-[var(--border)]
-          bg-[var(--surface)]
+          border border-(--border)
+          bg-(--surface)
           backdrop-blur-md
           p-4
         "
@@ -291,7 +294,7 @@ export default function WinKey() {
             mb-4
             text-base
             font-semibold
-            text-[var(--text-primary)]
+            text-(--primary)
           "
             >
               Screenshots
@@ -325,7 +328,7 @@ export default function WinKey() {
                 group
                 overflow-hidden
                 rounded-2xl
-                border border-[var(--border)]
+                border border-(--border)
               "
                 >
                   <div className="relative aspect-video">
@@ -344,10 +347,10 @@ export default function WinKey() {
 
                   <div
                     className="
-                  border-t border-[var(--border)]
+                  border-t border-(--border)
                   px-3 py-2
                   text-xs
-                  text-[var(--text-secondary)]
+                  text-(--text-secondary)
                 "
                   >
                     {image.label}
@@ -362,10 +365,10 @@ export default function WinKey() {
           <div
             className="
           mt-6 pt-4
-          border-t border-[var(--border)]
+          border-t border-(--border)
           flex items-center gap-2
           text-xs
-          text-[var(--accent)]
+          text-(--accent)
         "
           >
             <AlertTriangle size={18} />

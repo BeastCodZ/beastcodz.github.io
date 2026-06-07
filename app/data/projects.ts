@@ -12,7 +12,7 @@ export const projects: Project[] = [
   {
     title: "WinKey",
     href: "/projects/WinKey",
-    image: "/projects/WinKey/winkey.png",
+    image: "/projects/WinKey/winkey.webp",
     imageAlt: "WinKey",
     status: "[Archived] Successor: FallenKey",
     statusColor: "text-(--accent-soft)",
@@ -23,7 +23,7 @@ export const projects: Project[] = [
   {
     title: "Project Fallen",
     href: "/projects/Fallen",
-    image: "/projects/Fallen/arch.png",
+    image: "/projects/Fallen/arch.webp",
     imageAlt: "Arch Linux",
     status: "In Development",
     description:
@@ -33,7 +33,7 @@ export const projects: Project[] = [
   {
     title: "UniLost",
     href: "https://unilost.vercel.app",
-    image: "/projects/UniLost/tiet.png",
+    image: "/projects/UniLost/tiet.webp",
     imageAlt: "UniLost",
     status: "In Development",
     description:

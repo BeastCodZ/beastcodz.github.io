@@ -5,7 +5,6 @@ export default function Education() {
     <section
       id="education"
       className="
-        mt-8
         rounded-3xl
         border border-(--border)
         bg-(--surface)
@@ -38,7 +37,7 @@ export default function Education() {
         >
           <div className="flex items-start gap-4">
             <Image
-              src="/thapar.png"
+              src="/thapar.webp"
               alt="TIET"
               width={48}
               height={48}
@@ -86,7 +85,7 @@ export default function Education() {
         >
           <div className="flex items-start gap-4">
             <Image
-              src="/motiram.png"
+              src="/motiram.webp"
               alt="Moti Ram Arya Senior Secondary Model School"
               width={64}
               height={64}

@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     description:
       "A custom ecosystem connecting Arch Linux and Android through secure and developer-focused tools.",
     url: "https://beastcodz.github.io/projects/Fallen",
-    images: ["/image.jpg"],
+    images: ["/image.webp"],
   },
 };
 
@@ -33,8 +33,8 @@ export default function Fallen() {
     items-center
     gap-2
     text-sm
-    text-[var(--text-secondary)]
-    hover:text-[var(--accent-soft)]
+    text-(--text-secondary)
+    hover:text-(--accent-soft)
     transition-colors
   "
       >
@@ -47,10 +47,10 @@ export default function Fallen() {
             className="
         w-full max-w-4xl mx-auto
         rounded-3xl
-        bg-[var(--surface)]
+        bg-(--surface)
         backdrop-blur-xs
         border-2
-        border-[var(--border)]
+        border-(--border)
         bg-opacity-50
         p-4 md:p-8
         shadow-lg
@@ -60,11 +60,11 @@ export default function Fallen() {
 
             <div className="mb-8 flex items-start gap-3">
               <Image
-                src="/projects/Fallen/arch.png"
+                src="/projects/Fallen/arch.webp"
                 width={20}
                 height={20}
                 alt="Arch Linux"
-                className="text-[var(--text-primary)] shrink-0 mt-1"
+                className="text-(--primary) shrink-0 mt-1"
               />
 
               <div>
@@ -73,7 +73,7 @@ export default function Fallen() {
               text-xl
               md:text-2xl
               font-semibold
-              text-[var(--text-primary)]
+              text-(--primary)
             "
                 >
                   Project Fallen
@@ -83,7 +83,7 @@ export default function Fallen() {
                   className="
               mt-2
               text-sm
-              text-[var(--text-secondary)]
+              text-(--text-secondary)
             "
                 >
                   A custom ecosystem designed to bridge Arch Linux and Android
@@ -95,9 +95,9 @@ export default function Fallen() {
                   <span
                     className="
                 rounded-full
-                border border-[var(--border)]
+                border border-(--border)
                 px-2 py-0.5
-                text-[var(--accent)]
+                text-(--accent)
               "
                   >
                     Active Development
@@ -106,9 +106,9 @@ export default function Fallen() {
                   <span
                     className="
                 rounded-full
-                border border-[var(--border)]
+                border border-(--border)
                 px-2 py-0.5
-                text-[var(--accent-soft)]
+                text-(--accent-soft)
               "
                   >
                     Linux
@@ -117,9 +117,9 @@ export default function Fallen() {
                   <span
                     className="
                 rounded-full
-                border border-[var(--border)]
+                border border-(--border)
                 px-2 py-0.5
-                text-[var(--accent-soft)]
+                text-(--accent-soft)
               "
                   >
                     C/C++
@@ -127,9 +127,9 @@ export default function Fallen() {
                   <span
                     className="
                 rounded-full
-                border border-[var(--border)]
+                border border-(--border)
                 px-2 py-0.5
-                text-[var(--accent-soft)]
+                text-(--accent-soft)
               "
                   >
                     Python
@@ -137,9 +137,9 @@ export default function Fallen() {
                   <span
                     className="
                 rounded-full
-                border border-[var(--border)]
+                border border-(--border)
                 px-2 py-0.5
-                text-[var(--accent-soft)]
+                text-(--accent-soft)
               "
                   >
                     Rust
@@ -147,9 +147,9 @@ export default function Fallen() {
                   <span
                     className="
                 rounded-full
-                border border-[var(--border)]
+                border border-(--border)
                 px-2 py-0.5
-                text-[var(--accent-soft)]
+                text-(--accent-soft)
               "
                   >
                     Tauri
@@ -157,9 +157,9 @@ export default function Fallen() {
                   <span
                     className="
                 rounded-full
-                border border-[var(--border)]
+                border border-(--border)
                 px-2 py-0.5
-                text-[var(--accent-soft)]
+                text-(--accent-soft)
               "
                   >
                     Bash
@@ -167,9 +167,9 @@ export default function Fallen() {
                   <span
                     className="
                 rounded-full
-                border border-[var(--border)]
+                border border-(--border)
                 px-2 py-0.5
-                text-[var(--accent-soft)]
+                text-(--accent-soft)
               "
                   >
                     Shell Scripting
@@ -177,9 +177,9 @@ export default function Fallen() {
                   <span
                     className="
                 rounded-full
-                border border-[var(--border)]
+                border border-(--border)
                 px-2 py-0.5
-                text-[var(--accent-soft)]
+                text-(--accent-soft)
               "
                   >
                     CSS
@@ -193,19 +193,19 @@ export default function Fallen() {
             <div
               className="
           rounded-3xl
-          border border-[var(--border)]
-          bg-[var(--surface)]
+          border border-(--border)
+          bg-(--surface)
           p-4
         "
             >
               <div className="flex items-center gap-2 mb-3">
-                <BookOpen size={18} className="text-[var(--accent-soft)]" />
+                <BookOpen size={18} className="text-(--accent-soft)" />
 
                 <h2
                   className="
               text-base
               font-semibold
-              text-[var(--text-primary)]
+              text-(--primary)
             "
                 >
                   Origin
@@ -216,7 +216,7 @@ export default function Fallen() {
                 className="
     text-sm
     leading-6
-    text-[var(--text-secondary)]
+    text-(--text-secondary)
   "
               >
                 It all began with a simple question. I had Kali Linux installed
@@ -263,7 +263,7 @@ export default function Fallen() {
                 className="
     text-sm
     leading-6
-    text-[var(--text-secondary)]
+    text-(--text-secondary)
   "
               >
                 As for the name, &quot;Fallen&quot; was inspired by the idea of
@@ -288,8 +288,8 @@ export default function Fallen() {
               className="
           mt-4
           rounded-3xl
-          border border-[var(--border)]
-          bg-[var(--surface)]
+          border border-(--border)
+          bg-(--surface)
           p-4
         "
             >
@@ -298,7 +298,7 @@ export default function Fallen() {
             mb-3
             text-base
             font-semibold
-            text-[var(--text-primary)]
+            text-(--primary)
           "
               >
                 Vision
@@ -308,7 +308,7 @@ export default function Fallen() {
                 className="
             text-sm
             leading-6
-            text-[var(--text-secondary)]
+            text-(--text-secondary)
           "
               >
                 Existing solutions often rely on proprietary ecosystems, cloud
@@ -324,8 +324,8 @@ export default function Fallen() {
               className="
           mt-4
           rounded-3xl
-          border border-[var(--border)]
-          bg-[var(--surface)]
+          border border-(--border)
+          bg-(--surface)
           p-4
         "
             >
@@ -334,7 +334,7 @@ export default function Fallen() {
             mb-4
             text-base
             font-semibold
-            text-[var(--text-primary)]
+            text-(--primary)
           "
               >
                 Currently in Progress
@@ -344,15 +344,15 @@ export default function Fallen() {
                 <div
                   className="
               rounded-xl
-              border border-[var(--border)]
+              border border-(--border)
               p-3
             "
                 >
-                  <h3 className="text-sm font-semibold text-[var(--text-primary)]">
+                  <h3 className="text-sm font-semibold text-(--primary)">
                     Ecosystem Foundation
                   </h3>
 
-                  <p className="mt-2 text-xs text-[var(--text-secondary)]">
+                  <p className="mt-2 text-xs text-(--text-secondary)">
                     Architecture and project direction established.
                   </p>
                 </div>
@@ -360,15 +360,15 @@ export default function Fallen() {
                 <div
                   className="
               rounded-xl
-              border border-[var(--border)]
+              border border-(--border)
               p-3
             "
                 >
-                  <h3 className="text-sm font-semibold text-[var(--text-primary)]">
+                  <h3 className="text-sm font-semibold text-(--primary)">
                     Authentication
                   </h3>
 
-                  <p className="mt-2 text-xs text-[var(--text-secondary)]">
+                  <p className="mt-2 text-xs text-(--text-secondary)">
                     WinKey completed, FallenKey rewrite underway.
                   </p>
                 </div>
@@ -376,15 +376,15 @@ export default function Fallen() {
                 <div
                   className="
               rounded-xl
-              border border-[var(--border)]
+              border border-(--border)
               p-3
             "
                 >
-                  <h3 className="text-sm font-semibold text-[var(--text-primary)]">
+                  <h3 className="text-sm font-semibold text-(--primary)">
                     Desktop Integration
                   </h3>
 
-                  <p className="mt-2 text-xs text-[var(--text-secondary)]">
+                  <p className="mt-2 text-xs text-(--text-secondary)">
                     FallenCore currently in development.
                   </p>
                 </div>
@@ -392,15 +392,15 @@ export default function Fallen() {
                 <div
                   className="
               rounded-xl
-              border border-[var(--border)]
+              border border-(--border)
               p-3
             "
                 >
-                  <h3 className="text-sm font-semibold text-[var(--text-primary)]">
+                  <h3 className="text-sm font-semibold text-(--primary)">
                     Mobile Integration
                   </h3>
 
-                  <p className="mt-2 text-xs text-[var(--text-secondary)]">
+                  <p className="mt-2 text-xs text-(--text-secondary)">
                     Planned through FallenLink.
                   </p>
                 </div>
@@ -413,19 +413,19 @@ export default function Fallen() {
               className="
           mt-4
           rounded-3xl
-          border border-[var(--border)]
-          bg-[var(--surface)]
+          border border-(--border)
+          bg-(--surface)
           p-4
         "
             >
               <div className="flex items-center gap-2 mb-4">
-                <GitBranch size={18} className="text-[var(--accent-soft)]" />
+                <GitBranch size={18} className="text-(--accent-soft)" />
 
                 <h2
                   className="
               text-base
               font-semibold
-              text-[var(--text-primary)]
+              text-(--primary)
             "
                 >
                   Ecosystem Components
@@ -434,61 +434,61 @@ export default function Fallen() {
 
               <div className="space-y-4">
                 <div>
-                  <h3 className="font-semibold text-[var(--text-primary)]">
+                  <h3 className="font-semibold text-(--primary)">
                     FallenOS
                   </h3>
 
-                  <p className="text-xs text-[var(--accent-soft)]">
+                  <p className="text-xs text-(--accent-soft)">
                     Arch Linux • Hyprland • Pipewire • Waybar • Thunar •
                     Linux-Zen • Pipewire
                   </p>
 
-                  <p className="mt-1 text-sm text-[var(--text-secondary)]">
+                  <p className="mt-1 text-sm text-(--text-secondary)">
                     Customized Linux environment focused on productivity,
                     performance, and workflow optimization.
                   </p>
                 </div>
 
-                <div className="border-t border-[var(--border)] pt-4">
-                  <h3 className="font-semibold text-[var(--text-primary)]">
+                <div className="border-t border-(--border) pt-4">
+                  <h3 className="font-semibold text-(--primary)">
                     FallenCore
                   </h3>
 
-                  <p className="text-xs text-[var(--accent-soft)]">
+                  <p className="text-xs text-(--accent-soft)">
                     C++ • Qt6 • Rust
                   </p>
 
-                  <p className="mt-1 text-sm text-[var(--text-secondary)]">
+                  <p className="mt-1 text-sm text-(--text-secondary)">
                     Central desktop control center responsible for ecosystem
                     management and device integration.
                   </p>
                 </div>
 
-                <div className="border-t border-[var(--border)] pt-4">
-                  <h3 className="font-semibold text-[var(--text-primary)]">
+                <div className="border-t border-(--border) pt-4">
+                  <h3 className="font-semibold text-(--primary)">
                     FallenLink
                   </h3>
 
-                  <p className="text-xs text-[var(--accent-soft)]">
+                  <p className="text-xs text-(--accent-soft)">
                     Rust • Android (Yet to be implemented)
                   </p>
 
-                  <p className="mt-1 text-sm text-[var(--text-secondary)]">
+                  <p className="mt-1 text-sm text-(--text-secondary)">
                     Cross-device communication layer enabling file transfer,
                     clipboard sync, and device interaction.
                   </p>
                 </div>
 
-                <div className="border-t border-[var(--border)] pt-4">
-                  <h3 className="font-semibold text-[var(--text-primary)]">
+                <div className="border-t border-(--border) pt-4">
+                  <h3 className="font-semibold text-(--primary)">
                     FallenKey
                   </h3>
 
-                  <p className="text-xs text-[var(--accent-soft)]">
+                  <p className="text-xs text-(--accent-soft)">
                     Tauri • Rust • TypeScript
                   </p>
 
-                  <p className="mt-1 text-sm text-[var(--text-secondary)]">
+                  <p className="mt-1 text-sm text-(--text-secondary)">
                     Secure authenticator focused on privacy, reliability, and
                     ecosystem integration.
                   </p>
@@ -502,19 +502,19 @@ export default function Fallen() {
               className="
           mt-4
           rounded-3xl
-          border border-[var(--border)]
-          bg-[var(--surface)]
+          border border-(--border)
+          bg-(--surface)
           p-4
         "
             >
               <div className="flex items-center gap-2 mb-4">
-                <Cpu size={18} className="text-[var(--accent-soft)]" />
+                <Cpu size={18} className="text-(--accent-soft)" />
 
                 <h2
                   className="
               text-base
               font-semibold
-              text-[var(--text-primary)]
+              text-(--primary)
             "
                 >
                   Roadmap
@@ -525,44 +525,44 @@ export default function Fallen() {
                 {/* FallenOS */}
 
                 <div>
-                  <h3 className="font-semibold text-[var(--text-primary)]">
+                  <h3 className="font-semibold text-(--primary)">
                     FallenOS
                   </h3>
 
                   <div className="mt-2 space-y-2">
-                    <div className="text-[var(--text-secondary)]">
+                    <div className="text-(--text-secondary)">
                       ✓ v1.0 — Foundation
                     </div>
 
-                    <div className="ml-4 text-xs text-[var(--text-muted)]">
+                    <div className="ml-4 text-xs text-(--muted)">
                       Initial Arch Linux setup, Hyprland configuration, custom
                       Waybar, theming, workflow optimization.
                     </div>
 
-                    <div className="text-[var(--text-secondary)]">
+                    <div className="text-(--text-secondary)">
                       ◉ v2.0 — Workflow Expansion
                     </div>
 
-                    <div className="ml-4 text-xs text-[var(--text-muted)]">
+                    <div className="ml-4 text-xs text-(--muted)">
                       Custom SDDM lock screen, custom widgets, GPU screen
                       recorder integration, embedded timer, Spotify controls in
                       Waybar.
                     </div>
 
-                    <div className="text-[var(--text-secondary)]">
+                    <div className="text-(--text-secondary)">
                       ○ v3.0 — Ecosystem Integration
                     </div>
 
-                    <div className="ml-4 text-xs text-[var(--text-muted)]">
+                    <div className="ml-4 text-xs text-(--muted)">
                       Thunar Customization, NetworkManager Wrapper , FallenCore
                       integration, FallenKey integration.
                     </div>
 
-                    <div className="text-[var(--text-secondary)]">
+                    <div className="text-(--text-secondary)">
                       ○ v4.0 — Future Expansion
                     </div>
 
-                    <div className="ml-4 text-xs text-[var(--text-muted)]">
+                    <div className="ml-4 text-xs text-(--muted)">
                       To be decided.
                     </div>
                   </div>
@@ -570,34 +570,34 @@ export default function Fallen() {
 
                 {/* FallenKey */}
 
-                <div className="border-t border-[var(--border)] pt-4">
-                  <h3 className="font-semibold text-[var(--text-primary)]">
+                <div className="border-t border-(--border) pt-4">
+                  <h3 className="font-semibold text-(--primary)">
                     FallenKey
                   </h3>
 
                   <div className="mt-2 space-y-2">
-                    <div className="text-[var(--text-secondary)]">
+                    <div className="text-(--text-secondary)">
                       ✓ v0.1 — Core Authentication
                     </div>
 
-                    <div className="ml-4 text-xs text-[var(--text-muted)]">
+                    <div className="ml-4 text-xs text-(--muted)">
                       Secure offline TOTP generation and account management.
                     </div>
 
-                    <div className="text-[var(--text-secondary)]">
+                    <div className="text-(--text-secondary)">
                       ○ v0.4 — Device Synchronization
                     </div>
 
-                    <div className="ml-4 text-xs text-[var(--text-muted)]">
+                    <div className="ml-4 text-xs text-(--muted)">
                       Synchronized encrypted database between desktop and
                       Android.
                     </div>
 
-                    <div className="text-[var(--text-secondary)]">
+                    <div className="text-(--text-secondary)">
                       ○ v0.7 — Smart Autofill
                     </div>
 
-                    <div className="ml-4 text-xs text-[var(--text-muted)]">
+                    <div className="ml-4 text-xs text-(--muted)">
                       Keyboard integration for automatic OTP entry.
                     </div>
                   </div>
@@ -605,25 +605,25 @@ export default function Fallen() {
 
                 {/* FallenCore */}
 
-                <div className="border-t border-[var(--border)] pt-4">
-                  <h3 className="font-semibold text-[var(--text-primary)]">
+                <div className="border-t border-(--border) pt-4">
+                  <h3 className="font-semibold text-(--primary)">
                     FallenCore
                   </h3>
 
                   <div className="mt-2 space-y-2">
-                    <div className="text-[var(--text-secondary)]">
+                    <div className="text-(--text-secondary)">
                       ◉ v0.1 — Core Foundation
                     </div>
 
-                    <div className="ml-4 text-xs text-[var(--text-muted)]">
+                    <div className="ml-4 text-xs text-(--muted)">
                       Qt-based desktop interface and QuickShare implementation.
                     </div>
 
-                    <div className="text-[var(--text-secondary)]">
+                    <div className="text-(--text-secondary)">
                       ○ v0.2 — Service Integration
                     </div>
 
-                    <div className="ml-4 text-xs text-[var(--text-muted)]">
+                    <div className="ml-4 text-xs text-(--muted)">
                       Connectivity between UI layer and QuickShare backend.
                     </div>
                   </div>
@@ -631,26 +631,26 @@ export default function Fallen() {
 
                 {/* Future */}
 
-                <div className="border-t border-[var(--border)] pt-4">
-                  <h3 className="font-semibold text-[var(--text-primary)]">
+                <div className="border-t border-(--border) pt-4">
+                  <h3 className="font-semibold text-(--primary)">
                     Future Components
                   </h3>
 
                   <div className="mt-2 space-y-2">
-                    <div className="text-[var(--text-secondary)]">
+                    <div className="text-(--text-secondary)">
                       ○ FallenLink
                     </div>
 
-                    <div className="ml-4 text-xs text-[var(--text-muted)]">
+                    <div className="ml-4 text-xs text-(--muted)">
                       Cross-device communication layer for Android and Linux
                       integration.
                     </div>
 
-                    <div className="text-[var(--text-secondary)]">
+                    <div className="text-(--text-secondary)">
                       ○ FallenKnight
                     </div>
 
-                    <div className="ml-4 text-xs text-[var(--text-muted)]">
+                    <div className="ml-4 text-xs text-(--muted)">
                       Local AI assistant for the Fallen ecosystem.
                     </div>
                   </div>
@@ -663,10 +663,10 @@ export default function Fallen() {
             <div
               className="
           mt-6 pt-4
-          border-t border-[var(--border)]
+          border-t border-(--border)
           flex items-center gap-2
           text-xs
-          text-[var(--accent)]
+          text-(--accent)
         "
             >
               <AlertTriangle size={18} />
