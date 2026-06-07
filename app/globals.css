@@ -22,13 +22,14 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background:
+  /* background:
   radial-gradient(
     circle at top right,
     rgba(255,68,68,.08),
     transparent 40%
   ),
-  linear-gradient(#0A0505,#110707);
+  linear-gradient(#0A0505,#110707); */
+  background-color: #150101;
   background-position: center;
   background-size: cover;
   backdrop-filter: blur(10px);

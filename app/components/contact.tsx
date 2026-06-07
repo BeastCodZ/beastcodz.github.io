@@ -1,10 +1,6 @@
-import { Linkedin } from "@thesvg/react";
-import {  
-  Mail,
-  AlertTriangle,
-} from "lucide-react";
+import { Gmail, Linkedin } from "@thesvg/react";
+import { AlertTriangle, Mail } from "lucide-react";
 import { FaGithub } from "react-icons/fa";
-
 
 export default function Contact() {
   return (
@@ -12,29 +8,24 @@ export default function Contact() {
       className="
         w-full max-w-3xl mx-auto
         rounded-3xl
-        bg-[var(--surface)]
+        bg-(--surface)
         backdrop-blur-xs
         border-2
-        border-[var(--border)]
+        border-(--border)
         bg-opacity-50
         p-4 md:p-8
         shadow-lg
       "
     >
-      {/* Header */}
-
       <div className="mb-8">
         <div className="flex items-center gap-3">
-          <Mail
-            size={24}
-            className="text-[var(--text-primary)]"
-          />
+          <Mail size={18} className="text-(--accent)" />
 
           <h2
             className="
               text-xl
               font-semibold
-              text-[var(--text-primary)]
+              text-(--text-primary)
             "
           >
             Contact
@@ -45,16 +36,13 @@ export default function Contact() {
           className="
             mt-2
             text-sm
-            text-[var(--text-secondary)]
+            text-(--text-secondary)
           "
         >
-          Open to collaborations, internships,
-          development projects, and interesting
-          technical discussions.
+          Open to collaborations, internships, development projects, and
+          interesting technical discussions.
         </p>
       </div>
-
-      {/* Contact Methods */}
 
       <div className="grid md:grid-cols-2 gap-4">
         <a
@@ -62,12 +50,12 @@ export default function Contact() {
           className="
             flex items-center gap-3
             text-sm
-            text-[var(--text-secondary)]
-            hover:text-[var(--text-primary)]
+            text-(--text-secondary)
+            hover:text-(--text-primary)
             transition-colors
           "
         >
-          <Mail size={16} />
+          <Gmail width={16} height={16} />
           beastcodz1934@gmail.com
         </a>
 
@@ -78,8 +66,8 @@ export default function Contact() {
           className="
             flex items-center gap-3
             text-sm
-            text-[var(--text-secondary)]
-            hover:text-[var(--text-primary)]
+            text-(--text-secondary)
+            hover:text-(--text-primary)
             transition-colors
           "
         >
@@ -94,8 +82,8 @@ export default function Contact() {
           className="
             flex items-center gap-3
             text-sm
-            text-[var(--text-secondary)]
-            hover:text-[var(--text-primary)]
+            text-(--text-secondary)
+            hover:text-(--text-primary)
             transition-colors
           "
         >
@@ -104,12 +92,10 @@ export default function Contact() {
         </a>
       </div>
 
-      {/* Availability */}
-
       <div
         className="
           mt-8
-          border-t border-[var(--border)]
+          border-t border-(--border)
           pt-4
         "
       >
@@ -118,7 +104,7 @@ export default function Contact() {
             mb-2
             text-sm
             font-semibold
-            text-[var(--text-primary)]
+            text-(--text-primary)
           "
         >
           Availability
@@ -128,32 +114,27 @@ export default function Contact() {
           className="
             text-xs
             leading-5
-            text-[var(--text-secondary)]
+            text-(--text-secondary)
           "
         >
-          Currently focused on system tooling,
-          Linux customization, full-stack
-          development, and building the
-          FallenOS ecosystem.
+          Currently focused on system tooling, Linux customization, full-stack
+          development, and building the FallenOS ecosystem.
         </p>
       </div>
-
-      {/* Footer */}
 
       <div
         className="
           mt-6 pt-4
-          border-t border-[var(--border)]
+          border-t border-(--border)
           flex items-center gap-2
           text-xs
-          text-[var(--accent)]
+          text-(--accent)
         "
       >
         <AlertTriangle size={18} />
 
         <span>
-          Response time varies between a few
-          hours and one debugging session.
+          Response time varies between a few hours and one debugging session.
         </span>
       </div>
     </div>

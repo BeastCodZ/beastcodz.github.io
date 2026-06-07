@@ -8,12 +8,9 @@ export type Activity = {
 };
 
 export function useRecentActivity() {
-  const [activity, setActivity] =
-    useState<Activity | null>(null);
-
-// fetch("https://192.168.18.24:3001/api/github")
+  const [activity, setActivity] = useState<Activity | null>(null);
   useEffect(() => {
-fetch("https://beastcodzapi.vercel.app/api/github")    
+    fetch("https://beastcodzapi.vercel.app/api/github")
       .then((res) => res.json())
       .then(setActivity)
       .catch(console.error);

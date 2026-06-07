@@ -1,7 +1,12 @@
-import { AlertTriangle, UserCircle2 } from "lucide-react";
-import RecentActivityCard from "./Recentactivitycard";
-import Link from "next/link"
+"use client";
+import { AlertTriangle } from "lucide-react";
+import Link from "next/link";
 
+import RecentActivityCard from "./Recentactivitycard";
+import ProjectStatusCard from "./ProjectStatusCard";
+
+import { projects } from "../data/projects";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -9,192 +14,135 @@ export default function Home() {
       className="
         w-full max-w-3xl mx-auto
         rounded-3xl
-        bg-[var(--surface)]
+        bg-(--surface)
         backdrop-blur-xs
         border-2
-        border-[var(--border)]
+        border-(--border)
         bg-opacity-50
         p-4 md:p-8
         shadow-lg
       "
     >
-      {/* Hero */}
+      {" "}
       <div className="mb-8 flex flex-col items-center gap-3 text-center">
-        <UserCircle2 size={28} className="text-[var(--text-primary)]" />
+        <div className="flex flex-col items-center gap-4 text-center">
+          <Image
+            src="/me.png"
+            alt="BeastCodZ"
+            width={92}
+            height={92}
+            className="
+      rounded-2xl
+      border border-(--border)
+    "
+          />
 
-        <h1
-          className="
-            text-xl
-            md:text-2xl
-            font-semibold
-            text-[var(--text-primary)]
-          "
-        >
-          BeastCodZ
-        </h1>
+          <div>
+            <h1
+              className="
+        text-3xl
+        font-bold
+        tracking-wide
+        text-(--text-primary)
+      "
+            >
+              Beast<span className="text-(--accent-soft)">CodZ</span>
+            </h1>
 
-        <p
-          className="
-            text-xs
-            text-[var(--text-muted)]
-          "
-        >
-          Full Stack Developer • Software Engineer
-        </p>
+            <p
+              className="
+        mt-1
+        text-xs
+        text-(--accent-soft)
+      "
+            >
+              Full Stack Developer • Software Engineer
+            </p>
+          </div>
+        </div>
 
         <p
           className="
             text-xs md:text-sm
-            text-[var(--text-secondary)]
+            text-(--text-secondary)
           "
         >
           Building software, exploring systems, and understanding systems
           beneath the surface.
         </p>
       </div>
-
-      {/* Cards */}
       <div className="grid w-full grid-cols-1 gap-4">
-        {/* Current Status */}
-        
-
-        {/* Highlighted Work */}
         <div
           className="
-    rounded-3xl
-    border border-[var(--border)]
-    bg-[var(--surface)]
-    backdrop-blur-md w-full
-    p-4
-  "
+            rounded-3xl
+            border border-(--border)
+            bg-(--surface)
+            backdrop-blur-md
+            p-4
+          "
         >
           <h3
             className="
-      mb-4
-      text-base
-      font-semibold
-      text-[var(--text-primary)]
-    "
+              mb-4
+              text-base
+              font-semibold
+              text-(--text-primary)
+            "
           >
             Project Status
           </h3>
 
-          <div className="space-x-4 flex flex-col md:flex-row">
-            {/* FallenKey */}
-            <div>
-              <div className="flex flex-col">
-                <h4
-                  className="
-            font-semibold
-            text-[var(--text-primary)]
-          "
-                >
-                  FallenKey
-                </h4>
-
-                <span
-                  className="
-            text-[10px]
-            text-[var(--accent-soft)]
-          "
-                >
-                  In Development
-                </span>
-              </div>
-
-              <p
-                className="
-          mt-1
-          text-xs
-          leading-5
-          text-[var(--text-secondary)]
-        "
-              >
-                Complete rewrite of WinKey using Tauri, focused on performance,
-                reliability, and a native desktop experience.
-              </p>
-            </div>
-
-            {/* UniLost */}
-            <div
-              className="
-        pt-4 md:pl-4
-      "
-            >
-              <div className="flex flex-col">
-                <h4
-                  className="
-            font-semibold
-            text-[var(--text-primary)]
-          "
-                >
-                  UniLost
-                </h4>
-
-                <span
-                  className="
-            text-[10px]
-            text-[var(--accent-soft)]
-          "
-                >
-                  Active
-                </span>
-              </div>
-
-              <p
-                className="
-          mt-1
-          text-xs
-          leading-5
-          text-[var(--text-secondary)]
-        "
-              >
-                Accessibility-focused platform built to solve everyday campus
-                problems and improve the student experience.
-              </p>
-            </div>
+          <div className="flex flex-col md:flex-row gap-4">
+            {projects.slice(0, 2).map((project) => (
+              <ProjectStatusCard
+                key={project.title}
+                title={project.title}
+                status={project.status}
+                description={project.description}
+              />
+            ))}
           </div>
 
           <Link
             href="/#projects"
             className="
-      mt-4
-      inline-flex
-      text-xs
-      text-[var(--accent-soft)]
-      hover:text-[var(--text-primary)]
-      transition-colors
-    "
+              mt-4
+              inline-flex
+              text-xs
+              text-(--accent-soft)
+              hover:text-(--text-primary)
+              transition-colors
+            "
           >
             View All Projects →
           </Link>
         </div>
+
         <div
           className="
-    rounded-3xl
-    border border-[var(--border)]
-    bg-[var(--surface)]
-    backdrop-blur-md
-    p-4
-  "
+            rounded-3xl
+            border border-(--border)
+            bg-(--surface)
+            backdrop-blur-md
+            p-4
+          "
         >
           <RecentActivityCard />
         </div>
       </div>
-<div
+      <div
         className="
-        mt-6 pt-4
-          border-t border-[var(--border)]
+          mt-6 pt-4
+          border-t border-(--border)
           flex items-center gap-2
           text-xs
-          text-[var(--accent)]
+          text-(--accent)
         "
       >
         <AlertTriangle size={18} />
 
         <span>
-          Warning: User may be mood-oriented. Sarcasm included by
-          default.
+          Warning: User may be mood-oriented. Sarcasm included by default.
         </span>
       </div>
     </div>
