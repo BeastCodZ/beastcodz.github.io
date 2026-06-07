@@ -10,7 +10,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@supabase/supabase-js": "^2.49.8",
     "@thesvg/react": "^3.0.10",
     "framer-motion": "^12.12.2",
     "lucide-react": "^0.511.0",
