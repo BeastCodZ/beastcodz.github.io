@@ -321,7 +321,7 @@ export default function WinKey() {
               ].map((image) => (
                 <a
                   key={image.file}
-                  href={`/projects/WinKey/${image.file}.png`}
+                  href={`/projects/WinKey/${image.file}.webp`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="
