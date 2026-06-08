@@ -333,7 +333,7 @@ export default function WinKey() {
                 >
                   <div className="relative aspect-video">
                     <Image
-                      src={`/projects/WinKey/${image.file}.png`}
+                      src={`/projects/WinKey/${image.file}.webp`}
                       alt={image.label}
                       fill
                       className="
