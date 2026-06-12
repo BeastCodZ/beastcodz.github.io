@@ -79,36 +79,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${jetbrain.className} antialiased`}>
-        <>
-          {/* Gradient */}
-          <div
-  className="fixed inset-0 -z-20"
-  style={{
-    background: `
-      radial-gradient(
-        circle at top right,
-        rgba(255,68,68,0.05),
-        transparent 60%
-      ),
-      radial-gradient(
-        circle at bottom left,
-        rgba(255,68,68,0.1),
-        transparent 45%
-      ),
-      linear-gradient(
-        180deg,
-        #140909 0%,
-        #1a0d0d 50%,
-        #140909 100%
-      )
-    `,
-  }}
-/>
-
-          {/* Graph */}
-          {/* <Particle /> */}
-        </>
-
+        <div className="watermark">
+  {Array.from({ length: 150 }).map((_, i) => (
+    <span key={i}>BEASTCODZ</span>
+  ))}
+</div>
         <main className="relative flex flex-col items-center md:items-stretch z-10 min-h-dvh">
           {children}
         </main>
