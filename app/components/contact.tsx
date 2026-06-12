@@ -1,4 +1,4 @@
-import { Gmail, Linkedin } from "@thesvg/react";
+import { Gmail, Linkedin, Pdf } from "@thesvg/react";
 import { AlertTriangle, Mail } from "lucide-react";
 import { FaGithub } from "react-icons/fa";
 
@@ -56,7 +56,7 @@ export default function Contact() {
           "
         >
           <Gmail width={16} height={16} />
-          beastcodz1934@gmail.com
+          manan19340@gmail.com
         </a>
 
         <a
@@ -72,7 +72,7 @@ export default function Contact() {
           "
         >
           <FaGithub width={16} height={16} />
-          github.com/beastcodz
+          github.com/BeastCodZ
         </a>
 
         <a
@@ -89,6 +89,21 @@ export default function Contact() {
         >
           <Linkedin width={16} height={16} className="text-[#0072B1]" />
           linkedin.com/in/beastcodz
+        </a>
+        <a
+          href="/resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="
+            flex items-center gap-3
+            text-sm
+            text-(--text-secondary)
+            hover:text-(--text-primary)
+            transition-colors
+          "
+        >
+          <Pdf width={16} height={16} className="text-[#0072B1]" />
+          resume.pdf
         </a>
       </div>
 
@@ -107,19 +122,13 @@ export default function Contact() {
             text-(--text-primary)
           "
         >
-          Availability
+          Looking For
         </h3>
 
-        <p
-          className="
-            text-xs
-            leading-5
-            text-(--text-secondary)
-          "
-        >
-          Currently focused on system tooling, Linux customization, full-stack
-          development, and building the FallenOS ecosystem.
-        </p>
+        <p className="text-xs leading-5 text-(--text-secondary)">
+  Internships, collaborations, and ambitious ideas.
+  If you&apos;ve got one, let&apos;s talk.
+</p>
       </div>
 
       <div

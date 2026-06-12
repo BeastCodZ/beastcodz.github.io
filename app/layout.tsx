@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Particle from "./components/background";
+// import Particle from "./components/background";
 import {JetBrains_Mono} from "next/font/google"
 
 const jetbrain = JetBrains_Mono({ subsets: ["latin"] });
@@ -106,7 +106,7 @@ export default function RootLayout({
 />
 
           {/* Graph */}
-          <Particle />
+          {/* <Particle /> */}
         </>
 
         <main className="relative flex flex-col items-center md:items-stretch z-10 min-h-dvh">

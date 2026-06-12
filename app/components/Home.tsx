@@ -1,118 +1,88 @@
 "use client";
+
 import { AlertTriangle } from "lucide-react";
-import Link from "next/link";
-
+import ContactButton from "./contactb";
 import RecentActivityCard from "./Recentactivitycard";
-import ProjectStatusCard from "./ProjectStatusCard";
-
-import { projects } from "../data/projects";
-import Me from "./Me"
+import Me from "./Me";
 
 export default function Home() {
   return (
-    <div
-      className="
-        w-full max-w-3xl mx-auto
-        rounded-3xl
-        bg-(--surface)
-        backdrop-blur-xs
-        border-2
-        border-(--border)
-        bg-opacity-50
-        p-4 md:p-8
-        shadow-lg
-      "
-    >
-      {" "}
-      <div className="mb-8 flex flex-col items-center gap-3 text-center">
-        <div className="flex flex-col items-center gap-4 text-center">
-<Me/>
-        </div>
+    <div className="w-full max-w-3xl mx-auto rounded-3xl bg-(--surface) backdrop-blur-xs border-2 border-(--border) bg-opacity-50 p-4 md:p-8 shadow-lg">
 
-        <p
-          className="
-            text-xs md:text-sm
-            text-(--text-secondary)
-          "
-        >
-          Building software, exploring systems, and understanding systems
-          beneath the surface.
+      <div className="mb-8 flex flex-col items-center gap-3 text-center">
+        <Me />
+
+        <p className="max-w-xl text-xs md:text-sm text-(--text-secondary)">
+          Building software that matters and exploring the unexplored.
         </p>
       </div>
-      <div className="grid w-full grid-cols-1 gap-4">
-        <div
-          className="
-            rounded-3xl
-            border border-(--border)
-            bg-(--surface)
-            backdrop-blur-md
-            p-4
-          "
-        >
-          <h3
-            className="
-              mb-4
-              text-base
-              font-semibold
-              text-(--text-primary)
-            "
-          >
-            Project Status
-          </h3>
 
-          <div className="flex flex-col md:flex-row gap-4">
-            {projects.slice(0, 2).map((project) => (
-              <ProjectStatusCard
-                key={project.title}
-                title={project.title}
-                status={project.status}
-                description={project.description}
-              />
-            ))}
+      <div className="grid w-full grid-cols-1 gap-4">
+
+        <div className="rounded-3xl border border-(--border) bg-(--surface) backdrop-blur-md p-6">
+
+          <div className="mb-3">
+            <span className="text-xs uppercase tracking-widest text-(--accent-soft)">
+              About
+            </span>
           </div>
 
-          <Link
-            href="/#projects"
-            className="
-              mt-4
-              inline-flex
-              text-xs
-              text-(--accent-soft)
-              hover:text-(--text-primary)
-              transition-colors
-            "
-          >
-            View All Projects →
-          </Link>
+          <div className="space-y-4 text-sm text-(--text-secondary)">
+
+            <p>
+              I&apos;m a{" "}
+              <span className="text-(--accent-soft) italic font-semibold">
+                developer
+              </span>{" "}
+              with a knack for computers.
+            </p>
+
+            <p>
+              Whether it&apos;s web development, Linux, networking, embedded
+              systems, or something completely unrelated, chances are
+              I&apos;ll end up poking at it eventually.
+            </p>
+
+            <p>
+              I don&apos;t build software only because I want a career.
+              I build things because creating something from nothing is fun,
+              and chasing{" "}
+              <span className="text-(--accent-soft) italic font-semibold">
+                weird
+              </span>{" "}
+              ideas often leads to the most interesting results.
+            </p>
+
+            <div className="pt-2">
+              <p className="text-xs text-(--text-border)">
+                The best ideas usually come from combining things that were
+                never supposed to fit together.
+              </p>
+            </div>
+
+          </div>
+
+          <div className="mt-6 flex flex-wrap gap-4">
+            <ContactButton />
+          </div>
+
         </div>
 
-        <div
-          className="
-            rounded-3xl
-            border border-(--border)
-            bg-(--surface)
-            backdrop-blur-md
-            p-4
-          "
-        >
+        <div className="rounded-3xl border border-(--border) bg-(--surface) backdrop-blur-md p-4">
           <RecentActivityCard />
         </div>
+
       </div>
-      <div
-        className="
-          mt-6 pt-4
-          border-t border-(--border)
-          flex items-center gap-2
-          text-xs
-          text-(--accent)
-        "
-      >
-        <AlertTriangle size={18} />
+
+      <div className="mt-6 pt-4 border-t border-(--border) flex items-center gap-2 text-xs text-(--accent)">
+        <AlertTriangle size={16} />
 
         <span>
-          Warning: User may be mood-oriented. Sarcasm included by default.
+          Warning: May disappear into a random project for 12 hours and emerge
+          with either a prototype or a completely broken system and ton of knowledge.
         </span>
       </div>
+
     </div>
   );
 }
