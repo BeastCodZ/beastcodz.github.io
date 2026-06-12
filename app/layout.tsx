@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-// import Particle from "./components/background";
 import {JetBrains_Mono} from "next/font/google"
 
 const jetbrain = JetBrains_Mono({ subsets: ["latin"] });
