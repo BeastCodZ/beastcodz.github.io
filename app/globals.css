@@ -36,117 +36,46 @@ body {
   backdrop-filter: blur(10px);
   color: var(--foreground);
 }
-/* globals.css */
-
-/* Base background */
-html,
-body {
-  min-height: 100%;
-  background: linear-gradient(
-    180deg,
-    #140909 0%,
-    #1a0d0d 50%,
-    #140909 100%
-  );
-}
 
 /* Static glow layer */
-body::before {
-  content: "";
-  position: fixed;
+.meow {
+  position: absolute;
   inset: 0;
   z-index: -20;
   pointer-events: none;
 
   background:
     radial-gradient(
-      circle at top right,
-      rgba(255, 68, 68, 0.05),
-      transparent 60%
-    ),
-    radial-gradient(
-      circle at bottom left,
-      rgba(255, 68, 68, 0.10),
+      circle at 20% 20%,
+      rgba(255, 60, 60, 0.08),
       transparent 45%
-    );
-
-  filter: blur(40px);
-}
-
-/* Animated drifting glow */
-body::after {
-  content: "";
-  position: fixed;
-
-  /* oversized so movement doesn't expose edges */
-  width: 140vw;
-  height: 140vh;
-  left: -20vw;
-  top: -20vh;
-
-  z-index: -19;
-  pointer-events: none;
-
-  background:
-    radial-gradient(
-      circle at 20% 25%,
-      rgba(255, 80, 80, 0.10),
-      transparent 30%
     ),
     radial-gradient(
-      circle at 75% 65%,
-      rgba(255, 68, 68, 0.08),
-      transparent 35%
+      circle at 80% 25%,
+      rgba(255, 50, 50, 0.06),
+      transparent 50%
     ),
     radial-gradient(
-      circle at 50% 90%,
-      rgba(255, 40, 40, 0.06),
-      transparent 30%
+      circle at 50% 50%,
+      rgba(255, 40, 40, 0.04),
+      transparent 70%
+    ),
+    radial-gradient(
+      circle at 30% 80%,
+      rgba(255, 70, 70, 0.06),
+      transparent 45%
+    ),
+    radial-gradient(
+      circle at 80% 90%,
+      rgba(255, 50, 50, 0.05),
+      transparent 50%
+    ),
+    linear-gradient(
+      180deg,
+      #120808 0%,
+      #180b0b 50%,
+      #120808 100%
     );
 
-  filter: blur(20px);
-
-  animation: ambientGlow 240s ease-in-out infinite alternate;
+  /* filter: blur(80px); */
 }
-
-@keyframes ambientGlow {
-  0% {
-    transform: translate(0%, 0%) rotate(0deg);
-  }
-
-  25% {
-    transform: translate(2%, -1%) rotate(1deg);
-  }
-
-  50% {
-    transform: translate(4%, 2%) rotate(-1deg);
-  }
-
-  75% {
-    transform: translate(-2%, 3%) rotate(1deg);
-  }
-
-  100% {
-    transform: translate(-4%, -2%) rotate(-1deg);
-  }
-}
-.watermark {
-  position: fixed;
-  inset: 0;
-
-  pointer-events: none;
-  user-select: none;
-
-  z-index: -1;
-
-  opacity: 0.015;
-
-  background-image:
-    repeating-linear-gradient(
-      0deg,
-      transparent 0px,
-      transparent 100px,
-      rgba(255, 68, 68, 0.02) 100px,
-      rgba(255, 68, 68, 0.02) 101px
-    );
-};

@@ -78,11 +78,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${jetbrain.className} antialiased`}>
-        <div className="watermark">
-  {Array.from({ length: 150 }).map((_, i) => (
-    <span key={i}>BEASTCODZ</span>
-  ))}
-</div>
+        <div className="meow" />
         <main className="relative flex flex-col items-center md:items-stretch z-10 min-h-dvh">
           {children}
         </main>
