@@ -21,7 +21,7 @@ export const projects: Project[] = [
   },
 
   {
-    title: "Project Fallen",
+    title: "The Fallen Project",
     href: "/projects/Fallen",
     image: "/projects/Fallen/arch.webp",
     imageAlt: "Arch Linux",
