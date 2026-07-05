@@ -86,7 +86,6 @@ export default function Education() {
               alt="Moti Ram Arya Senior Secondary Model School"
               width={64}
               height={64}
-              style={{ height: "auto" }}
               className="rounded-lg bg-[#3f4197] shrink-0"
             />
 

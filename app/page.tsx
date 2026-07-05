@@ -9,30 +9,30 @@ const Contact = lazy(() => import("./components/contact"));
 
 export default function Page() {
   return (
-    <main className="flex flex-col items-center">
+    <main className="flex flex-col items-center gap-4 md:gap-6">
       <Suspense fallback={<div>Loading...</div>}>
-        <section id="home" className="w-full max-w-3xl min-h-screen p-4">
+        <section id="home" className="w-full max-w-3xl min-h-screen px-4">
           <Home />
         </section>
 
-        <section id="skills" className="w-full max-w-3xl min-h-screen p-4">
+        <section id="skills" className="w-full max-w-3xl min-h-screen px-4">
           <Skills />
         </section>
 
 
-        <section id="projects" className="w-full max-w-3xl min-h-screen p-4">
+        <section id="projects" className="w-full max-w-3xl min-h-screen px-4">
           <Projects />
         </section>
 
-        <section id="certificate" className="w-full max-w-3xl min-h-screen p-4">
+        <section id="certificate" className="w-full max-w-3xl min-h-screen px-4">
           <Certificate />
         </section>
 
-        <section id="education" className="w-full max-w-3xl min-h-screen p-4">
+        <section id="education" className="w-full max-w-3xl min-h-screen px-4">
           <Education />
         </section>
 
-        <section id="contact" className="w-full max-w-3xl min-h-screen p-4">
+        <section id="contact" className="w-full max-w-3xl min-h-screen px-4">
           <Contact />
         </section>
       </Suspense>

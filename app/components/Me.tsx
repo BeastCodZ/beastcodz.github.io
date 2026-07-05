@@ -7,12 +7,12 @@ export default function Me() {
   const imgWrap = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
-    const el = imgWrap.current;
-    if (!el) return;
-
     let raf = 0;
 
     function loop() {
+      const el = imgWrap.current;
+      if (!el) return;
+
       const rect = el.getBoundingClientRect();
       const winH = window.innerHeight;
       // small parallax based on distance from center
@@ -40,7 +40,7 @@ export default function Me() {
           </h1>
 
           <div className="relative mb-2 h-1 w-50 overflow-hidden rounded-full bg-(--border)">
-            <div className="absolute top-0 left-0 h-full w-12 bg-(--accent-soft) animate-[slide_3s_linear_infinite]" />
+            <div className="absolute top-0 left-0 h-full w-12 bg-(--accent-soft) animate-[slide_2s_linear_infinite]" />
           </div>
         </div>
 
