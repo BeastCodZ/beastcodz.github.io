@@ -1,6 +1,5 @@
 import { lazy, Suspense } from "react";
 import Projects from "./components/projects";
-// import FadeIn from "./components/FadeIn";
 
 const Home = lazy(() => import("./components/Home"));
 const Skills = lazy(() => import("./components/skills"));
@@ -10,72 +9,33 @@ const Contact = lazy(() => import("./components/contact"));
 
 export default function Page() {
   return (
-    <>
-      <div className="w-full flex flex-row justify-center items-center">
-        <div className="w-full max-w-3xl flex flex-col items-center justify-center min-h-screen max-h-2svh p-4">
-          <Suspense fallback={<div>Loading...</div>}>
-              <section id="home">
-                <Home />
-              </section>
-            
-          </Suspense>
-        </div>
-      </div>
-      <div className="w-full flex justify-center items-center p-4">
-        <div className="w-full max-w-3xl flex flex-col items-center justify-center min-h-screen">
-          <Suspense fallback={<div>Loading...</div>}>
-            
-              <section id="skills">
-                <Skills />
-              </section>
-            
-          </Suspense>
-        </div>
-      </div>
-      <div className="w-full flex justify-center items-center p-4">
-        <div className="w-full max-w-3xl flex flex-col items-center justify-center min-h-screen">
-          <Suspense fallback={<div>Loading...</div>}>
-            
-              <section id="projects">
-                <Projects />
-              </section>
-            
-          </Suspense>
-        </div>
-      </div>
-      <div className="w-full flex justify-center items-center p-4">
-        <div className="w-full max-w-3xl flex flex-col items-center justify-center min-h-screen">
-          <Suspense fallback={<div>Loading...</div>}>
-            
-              <section id="certificate">
-                <Certificate />
-              </section>
-            
-          </Suspense>
-        </div>
-      </div>
-      <div className="w-full flex justify-center items-center p-4">
-        <div className="w-full max-w-3xl flex flex-col items-center justify-center min-h-screen">
-          <Suspense fallback={<div>Loading...</div>}>
-            
-              <section id="education">
-                <Education />
-              </section>
-            
-          </Suspense>
-        </div>
-      </div>
-      <div className="w-full flex justify-center items-center p-4">
-        <div className="w-full max-w-3xl flex flex-col items-center justify-center min-h-screen">
-          <Suspense fallback={<div>Loading...</div>}>
-            
-              <section id="contact">
-                <Contact />
-              </section>
-            
-          </Suspense>
-        </div>
-      </div>
-    </>
+    <main className="flex flex-col items-center">
+      <Suspense fallback={<div>Loading...</div>}>
+        <section id="home" className="w-full max-w-3xl min-h-screen p-4">
+          <Home />
+        </section>
+
+        <section id="skills" className="w-full max-w-3xl min-h-screen p-4">
+          <Skills />
+        </section>
+
+
+        <section id="projects" className="w-full max-w-3xl min-h-screen p-4">
+          <Projects />
+        </section>
+
+        <section id="certificate" className="w-full max-w-3xl min-h-screen p-4">
+          <Certificate />
+        </section>
+
+        <section id="education" className="w-full max-w-3xl min-h-screen p-4">
+          <Education />
+        </section>
+
+        <section id="contact" className="w-full max-w-3xl min-h-screen p-4">
+          <Contact />
+        </section>
+      </Suspense>
+    </main>
   );
 }

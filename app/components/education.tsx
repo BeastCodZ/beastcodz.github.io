@@ -65,14 +65,11 @@ export default function Education() {
               flex md:flex-row flex-col gap-2
             "
           >
-            <div className="md:mr-4 bg-black/20 p-2 rounded-lg">
-              Started in Electrical Engineering and successfully upgraded to
-              Computer Engineering.
-            </div>
             <div className="bg-black/20 p-2 rounded-lg">
-              Currently focused on strengthening fundamentals in software
-              development, systems, and computer science.
+              Focusing on Data Structures & Algorithms, software engineering, computer systems, and core programming fundamentals. Continuously strengthening problem-solving skills through coursework and personal projects.
             </div>
+
+
           </div>
         </div>
 
@@ -89,7 +86,8 @@ export default function Education() {
               alt="Moti Ram Arya Senior Secondary Model School"
               width={64}
               height={64}
-              className="w-16 h-auto rounded-lg bg-[#3f4197] shrink-0"
+              style={{ height: "auto" }}
+              className="rounded-lg bg-[#3f4197] shrink-0"
             />
 
             <div>
@@ -106,8 +104,8 @@ export default function Education() {
           </div>
 
           <div className="mt-3 text-xs leading-5 text-(--text-secondary)">
-            <div className="md:mr-4 bg-black/20 p-2 rounded-lg">
-              Non-Medical Stream with Computer Science.
+            <div className="bg-black/20 p-2 rounded-lg">
+              Pursued the Non-Medical stream with Computer Science. Developed Discord bots and dashboards using Node.js, Express.js, Discord.js, and MongoDB.
             </div>
           </div>
         </div>

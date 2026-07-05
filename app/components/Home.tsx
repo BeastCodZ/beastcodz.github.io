@@ -19,7 +19,7 @@ export default function Home() {
 
       <div className="grid w-full grid-cols-1 gap-4">
 
-        <div className="rounded-3xl border border-(--border) bg-(--surface) backdrop-blur-md p-6">
+        <div className="rounded-3xl border border-(--border) bg-(--surface) bg-opacity-50 backdrop-blur-xs p-6">
 
           <div className="mb-3">
             <span className="text-xs uppercase tracking-widest text-(--accent-soft)">
@@ -78,8 +78,7 @@ export default function Home() {
         <AlertTriangle size={16} />
 
         <span>
-          Warning: May disappear into a random project for 12 hours and emerge
-          with either a prototype or a completely broken system and ton of knowledge.
+          Warning: May Start Debugging Mid-Conversation
         </span>
       </div>
 
