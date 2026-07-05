@@ -11,7 +11,7 @@ export default function Page() {
   return (
     <main className="flex flex-col items-center gap-4 md:gap-6">
       <Suspense fallback={<div>Loading...</div>}>
-        <section id="home" className="w-full max-w-3xl min-h-screen px-4">
+        <section id="home" className="w-full max-w-3xl min-h-screen px-4 py-4">
           <Home />
         </section>
 
